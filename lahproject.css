@@ -4,8 +4,9 @@ html {
   text-align: center;
 }
 select {
-	background: #fff7c0;
+	background: darkgrey;
 	border-radius: 4px;
+	border-color: white;
 }
 button {
 	border-style: none;
@@ -27,3 +28,42 @@ button {
 	font-weight: bold;
 	font-style: italic;
 }
+#red {
+	color: red;
+}
+#orange {
+	color: orange;
+}
+#yellow {
+	color: yellow;
+}
+#green {
+	color: green;
+}
+#blue {
+	color: blue;
+}
+#purple {
+	color: purple;
+}
+#pink {
+	color: pink;
+}
+#white {
+	color: white;
+}
+#black {
+	color: black;
+}
+#grey {
+	color: grey;
+}
+#brown {
+	color: brown;
+}
+.nav-button {
+	color: #FF0000
+	font-size: 20px
+}
+
+.nav-button.hover
