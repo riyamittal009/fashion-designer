@@ -1,5 +1,5 @@
 html {
-	background: linear-gradient(#00aaff, #00ffaa);
+	background: linear-gradient(pink, magenta);
 	background-attachment: fixed;
   text-align: center;
 }
@@ -30,16 +30,22 @@ button {
 	font-size: 2em;
 	font-weight: bold;
 	font-style: italic;
+	animation-name: title;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
 }
-.nav-button {
+@keyframes title {
+	0% {color: #6F0CE8;}
+	50% {color: #2D00FF;}
+	100% {color: #6F0CE8;}
+}
+.nav-bar {
 	color: #FF0000
 	font-size: 20px
 	font-weight: bold;
 }
-
-.nav-button:hover {
+.nav-bar:hover {
 	color: #FFFF00
 	font-size: 20px
 	font-weight: bold;
-
 }
