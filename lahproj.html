@@ -8,25 +8,20 @@
   <body>
     <table>
       <tr>
-        <button type="button" name="button">
           <a href="www.google.com">
             Home
           </a>
-        </button>
-        <button type="button" name="button">
           <a href="www.yahoo.com">
             About Us
           </a>
-        </button>
-        <button type="button" name="button">
           <a href="www.bing.com">
             Contact Us
           </a>
-        </button>
       </tr>
+    </table>
     <p class="title">Hi! Welcome to our Online Fashion Designer. Tell us what you want to base your outfit off of. </p>
     <br><br>
-    <div >
+    <div>
       <h4>Color</h4>
       <select id="color" onchange="savecolor();">
         <option id="red" value="red">Red</option>
@@ -44,9 +39,9 @@
     </div>
     <br><br>
 
-    <div id="gender">
+    <div>
       <h4>Gender</h4>
-      <select>
+      <select id="gender" onchange="savegender();">
         <option id="female" value="female">Female</option>
         <option id="male" value="male">Male</option>
         <option id="unisex" value="unisex">Unisex</option>
@@ -54,9 +49,9 @@
     </div>
     <br><br>
 
-    <div id="femaletype">
+    <div>
       <h4>Type</h4>
-      <select>
+      <select id="femaletype">
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
         <option value="dress">Dress</option>
@@ -64,21 +59,21 @@
     </div>
     <br><br>
 
-    <div id="maletype">
+    <div>
       <h4>Type</h4>
-      <select>
+      <select id="maletype">
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
       </select>
     </div>
     <br><br>
 
-    <div id="femaletops">
+    <div>
       <h4>Clothing</h4>
-      <select>
+      <select id="femaletops">
         <option value="T-shirt">T-shirt</option>
-        <option value="bottom"></option>
-        <option value="top">Top</option>
+        <option value="offshoulder">Off the shoulder top</option>
+        <option value="tanktop">tanktop</option>
         <option value="bottom">Bottom</option>
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>

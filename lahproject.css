@@ -21,6 +21,10 @@ button {
 	cursor: pointer;
 	outline: none;
 }
+a {
+	text-decoration: none;
+	color: white;
+}
 @keyframes button {
 	0% {background: #2D00FF;}
 	50% {background: #6F0CE8;}
