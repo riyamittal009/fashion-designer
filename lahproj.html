@@ -51,7 +51,7 @@
 
     <div>
       <h4>Female Type</h4>
-      <select id="femaletype">
+      <select id="femaletype" onchange="savefemaletype();">
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
         <option value="dress">Dress</option>
@@ -61,7 +61,7 @@
 
     <div>
       <h4>Male Type</h4>
-      <select id="maletype">
+      <select id="maletype" onchange="savemaletype();">
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
       </select>
@@ -70,9 +70,9 @@
 
     <div>
       <h4>Female Tops Type</h4>
-      <select id="femaletops">
+      <select id="femaletops" onchange="savefemaletops();">
         <option value="T-shirt">T-shirt</option>
-        <option value="fullsleeve"> fullsleeve </option>
+        <option value="fullsleeve"> Full sleeve </option>
         <option value="offshoulder">Off the shoulder top</option>
         <option value="tanktop">tanktop</option>
         <option value="cropped">Cropped-shirt</option>
@@ -84,7 +84,7 @@
 
     <div>
       <h4>Female Bottoms Type</h4>
-      <select id="femalebottoms">
+      <select id="femalebottoms" onchange="savefemalebottoms();">
         <option value="jeans">Jeans</option>
         <option value="leggings">Leggings</option>
         <option value="skirt">Skirt</option>
@@ -94,14 +94,23 @@
 
     <div>
       <h4>Male Top Types</h4>
-      <select id="femalebottoms">
+      <select id="maletops">
         <option value="T-shirt">T-shirt</option>
-        <option value="fullsleeve">Leggings</option>
-        <option value="skirt">Skirt</option>
-        <option value="sweatpants">Sweatpants</option>
+        <option value="fullsleeve">Full sleeve</option>
+        <option value="hoodie">Hoodie</option>
+        <option value="jacket">Jacket</option>
       </select>
     </div>
 
+    <div>
+      <h4>Male Bottom Types</h4>
+      <select id="malebottoms">
+        <option value="jeans">Jeans</option>
+        <option value="sweatpants">Sweatpants</option>
+        <option value="">Hoodie</option>
+        <option value="jacket">Jacket</option>
+      </select>
+    </div>
 
     <button onclick="gender();" class="nav-button">Next</button>
 
