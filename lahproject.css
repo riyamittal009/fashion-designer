@@ -19,6 +19,7 @@ button {
 	animation-iteration-count: infinite;
 	margin-top: 30px;
 	cursor: pointer;
+	outline: none;
 }
 @keyframes button {
 	0% {background: #2D00FF;}
