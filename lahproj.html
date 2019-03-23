@@ -3,7 +3,6 @@
   <head>
     <title>Online Fashion Designer</title>
 		<link rel="stylesheet" type="text/css" href="lahproject.css">
-    <script src="lahproject.js"></script>
     <link rel="shortcut icon" href=".ico">
   </head>
   <body>
@@ -11,8 +10,9 @@
       <tr>
     <p class="title">Hi! Welcome to our Online Fashion Designer. Tell us what you want to base your outfit off of. </p>
     <br><br>
-    <div ><h4>Color</h4>
-    <select id="color" onclick = "savecolor();">
+    <div >
+      <h4>Color</h4>
+      <select id="color" onclick = "savecolor();">
         <option id="red" value="red">Red</option>
         <option id="orange" value="orange">Orange</option>
         <option id="yellow" value="yellow">Yellow</option>
@@ -24,20 +24,22 @@
         <option id="black" value="black">Black</option>
         <option id="grey" value="grey">Grey</option>
         <option id="brown" value="brown">Brown</option>
-    </select></div>
+      </select>
+    </div>
     <br><br>
 
-    <div id="gender"><h4>Gender</h4>
-    <select>
+    <div id="gender">
+      <h4>Gender</h4>
+      <select>
         <option id="female" value="female">Female</option>
         <option id="male" value="male">Male</option>
         <option id="unisex" value="unisex">Unisex</option>
-    </select></div>
+      </select>
+    </div>
     <br><br>
 
     <div id="femaletype">
       <h4>Type</h4>
-      <br>
       <select>
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
@@ -48,16 +50,15 @@
 
     <div id="maletype">
       <h4>Type</h4>
-      <br>
       <select>
         <option value="top">Top</option>
         <option value="bottom">Bottom</option>
       </select>
     </div>
+    <br><br>
 
     <div id="femaletops">
       <h4>Clothing</h4>
-      <br>
       <select>
         <option value="T-shirt">T-shirt</option>
         <option value="bottom"></option>
@@ -124,4 +125,5 @@
     <br><br> -->
     <footer></footer>
   </body>
+  <script src="lahproject.js"></script>
 </html>
