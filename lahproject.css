@@ -3,8 +3,27 @@ html {
 	background-attachment: fixed;
   text-align: center;
 }
-h1 {
-  font-size: 60px;
-  color: #123456;
-  font-style: normal;
+select {
+	background: #fff7c0;
+	border-radius: 4px;
+}
+button {
+	border-style: none;
+	border-radius: 50px;
+	font-size: 20px;
+	padding: 10px 20px;
+	color: white;
+	animation-name: button;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes button {
+	0% {background: #2D00FF;}
+	50% {background: #6F0CE8;}
+	100% {background: #2D00FF;}
+}
+.title {
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
 }
