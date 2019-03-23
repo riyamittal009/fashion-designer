@@ -1,7 +1,7 @@
-var choosecolor = document.getElementById("color");
+var color = document.getElementById("color");
 
 function savecolor()
 {
-var savedcolor = choosecolor.options[choosecolor.selectedIndex].value;
+var savedcolor = color.options[color.selectedIndex].value;
 console.log(savedcolor);
 }
