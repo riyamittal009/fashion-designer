@@ -1,0 +1,10 @@
+html {
+	background: linear-gradient(#00aaff, #00ffaa);
+	background-attachment: fixed;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  color: #123456;
+  font-style: normal;
+}
