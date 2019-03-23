@@ -41,7 +41,7 @@ function savefemalebottoms()
   console.log(savedfemalebottoms);
 }
 
-function saveinfo(color, gender, femaletype, maletype)
+function "saveinfo"(color, gender, femaletype, maletype)
 {
   var "saved"+info = info.options[info.selectedIndex].value;
   console.log("saved"+info);
