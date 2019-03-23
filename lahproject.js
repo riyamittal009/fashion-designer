@@ -1,1 +1,1 @@
-var x = 4;
+var choosecolor = document.getElementById("color");
