@@ -1,4 +1,6 @@
 var waw=0;
+var prev;
+var curr;
 
 var divcolor = document.getElementById("divcolor");
 var divgender = document.getElementById("divgender");
@@ -22,7 +24,7 @@ function nextphase()
 {
   waw++;
   console.log(waw);
-}
+
 
 if (waw == 0)
 {
@@ -38,6 +40,7 @@ if (waw == 0)
           divfemaletype.style.display == "block";
           divgender.style.display == "none";
         }
+}
 
 var color = document.getElementById("color");
 function savecolor()
