@@ -48,10 +48,13 @@ html {
   font-family: 'Pacifico', cursive;
   background: url("secondbg.png");
   background-attachment: fixed;
-
+	animation-name: fade;
+	animation-duration: 0.8s;
 }
-
-
+@keyframes fade {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
   select {
     background: #fff7c0;
     border-radius: 4px;
@@ -446,3 +449,4 @@ max-height: 4000px;
 @keyframes marquee {
 	0% {left: 100%;}
 	100% {left: -100%;}
+}
