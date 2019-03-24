@@ -26,8 +26,9 @@ button {
 a {
 	text-decoration: none;
 	color: white;
-	margin-left: 10px;
-	marign-right: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
 }
 @keyframes button {
 	0% {background: #2D00FF;}
@@ -35,7 +36,8 @@ a {
 	100% {background: #2D00FF;}
 }
 .title {
-	font-size: 2em;
+	font-size: 5em;
+	margin-top: 100px;
 	/*font-weight: bold;
 	font-style: italic; */
 	animation-name: title;
