@@ -206,13 +206,12 @@ if (waw == 0)
 }
 
 var x;
-var prevx;
-var currx;
-
+var next;
 function picture()
 {
   if (waw==4 && three == "top")
   {
+    x = Math.floor(Math.random()*5)+1;
       for (var i=1; i<=3; i++)
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
@@ -221,14 +220,14 @@ function picture()
       for (var k=1; k<=3; k++)
       {
           var bottom = document.getElementById("bottom"+k)
-          x = Math.floor(Math.random()*5)+1;
-          prevx = x;
-          bottom.src = two+"bottom"+x+".webp";
+          next = k+x
+          bottom.src = two+"bottom"+next+".webp";
       }
 
   }
     else if (waw==4 && three == "bottom")
     {
+        x = Math.floor(Math.random()*5)+1;
         for (var i=1; i<=3; i++)
         {
             document.getElementById("bottom" + i).src=one+two+three+four+".webp";
@@ -237,8 +236,8 @@ function picture()
         for (var k=1; k<=3; k++)
         {
             var top = document.getElementById("top"+k)
-            x = Math.floor(Math.random()*5)+1;
-            top.src = two+"top"+x+".webp";
+            next = k+x
+            top.src = two+"top"+next+".webp";
         }
     }
 
