@@ -4,6 +4,10 @@ h1 {
   color: #001f3f;
   font-style:normal;
   font-variant: normal;
+  text-align: center;
+  display: inline-block;
+  background-color: Grey
+
 }
 
 /* About Us */
@@ -14,6 +18,9 @@ h2 {
   color: #0074D9;
   font-style:normal;
   font-variant: normal;
+  text-align: center;
+  display: inline-block;
+  background-color: Grey
 }
 
 /* Meet the Team */
@@ -48,4 +55,20 @@ footer {
   display:block;
   color: #105916;
   margin: auto;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+
+}
+.nav-bar {
+  background-color: #3D9970;
+  margin: 2px;
+  padding:
+
+
 }

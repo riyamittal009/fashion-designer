@@ -50,41 +50,41 @@ var femaletype = document.getElementById("femaletype");
 function savefemaletype()
 {
   savedfemaletype = femaletype.options[femaletype.selectedIndex].value;
-  console.log(savedfemaletype);
+  // console.log(savedfemaletype);
 }
 
 var maletype = document.getElementById("maletype");
 function savemaletype()
 {
   savedmaletype = maletype.options[maletype.selectedIndex].value;
-  console.log(savedmaletype);
+  // console.log(savedmaletype);
 }
 
 var femaletops = document.getElementById("femaletops");
 function savefemaletops()
 {
   savedfemaletops = femaletops.options[femaletops.selectedIndex].value;
-  console.log(savedfemaletops);
+  // console.log(savedfemaletops);
 }
 
 var femalebottoms = document.getElementById("femalebottoms");
 function savefemalebottoms()
 {
   savedfemalebottoms = femalebottoms.options[femalebottoms.selectedIndex].value;
-  console.log(savedfemalebottoms);
+  // console.log(savedfemalebottoms);
 }
 var maletops = document.getElementById("maletops");
 function savemaletops()
 {
   savedmaletops = maletops.options[maletops.selectedIndex].value;
-  console.log(savedmaletops);
+  // console.log(savedmaletops);
 }
 
 var malebottoms = document.getElementById("malebottoms");
 function savemalebottoms()
 {
   savedmalebottoms = malebottoms.options[malebottoms.selectedIndex].value;
-  console.log(savedmalebottoms);
+  // console.log(savedmalebottoms);
 }
 
 var waw=0;
@@ -127,7 +127,7 @@ if (waw == 0)
                 {
                   four = "tshirt";
                   console.log(four);
-                  console.log(one+", "+ two+", "+  three+", "+  four);
+                  console.log(one+", "+ two+", "+  three+", "+four);
                 }
                 else if (savedfemaletops == "fullsleeve")
                 {
@@ -209,8 +209,11 @@ if (waw == 0)
                     four = "shorts";
                 }
 
+                picture();
 }
-/*function picture()
+
+
+function picture()
 {
-handleimage.src=one+two+three+four + ".png";
-}*/
+handleimage.src=one+two+three+four + ".jpg";
+}
