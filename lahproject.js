@@ -1,5 +1,3 @@
-var prev;
-var curr;
 
 var divcolor = document.getElementById("divcolor");
 var divgender = document.getElementById("divgender");
