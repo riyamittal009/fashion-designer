@@ -210,9 +210,16 @@ var next;
 function picture()
 {
 
-  if (waw==4 && three == "top")
+  if (waw==4){
+      for (var j=1; j<=3; j++){
+        var topx = document.getElementById("top"+k)
+        var bottomx = document.getElementById("bottom"+k)
+        topx.style.visibility = "visible";
+        bottom.style.visibility = "visible";
+        }
+  }
+  else if (waw==4 && three == "top")
   {
-    options.style.visibility = "visible";
       for (var i=1; i<=3; i++)
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
