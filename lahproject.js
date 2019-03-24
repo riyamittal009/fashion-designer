@@ -205,7 +205,7 @@ if (waw == 0)
 
 }
 
-var x = Math.floor(Math.random()*5)+1;
+var x;
 
 function picture()
 {
@@ -219,6 +219,7 @@ function picture()
       for (var k=1; k<=3; k++)
       {
           var bottom = document.getElementById("bottom"+k)
+          x = Math.floor(Math.random()*5)+1;
           bottom.src = two+"bottom"+x+".webp";
       }
 
