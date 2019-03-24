@@ -235,7 +235,7 @@ function picture()
         {
             var top = document.getElementById("top"+k)
             x = Math.floor(Math.random()*5)+1;
-            top.src = two+"savedfemaletops"+x+".webp";
+            top.src = two+"top"+x+".webp";
         }
     }
 
