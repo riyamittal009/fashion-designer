@@ -19,7 +19,7 @@ var savedfemalebottoms;
 var savedmaletops;
 var savedmalebottoms;
 
-divcolor.style.display = "none";
+divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
 divmaletype.style.display = "none";
@@ -107,9 +107,42 @@ if (waw == 0)
     }
         else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
         {
-          divfemaletype.style.display == "block";
-          divgender.style.display == "none";
+          divfemaletype.style.display = "block";
+          divgender.style.display = "none";
         }
+            else if (waw == 3 && savedfemaletype == "top")
+            {
+              divfemaletype.style.display = "none";
+              divfemaletops.style.display="block";
+            }
+
+            else if (waw == 3 && savedfemaletype == "bottom")
+            {
+              divfemaletype.style.display = "none";
+              divfemalebottoms.style.display="block"
+            }
+
+          /*  else if (waw == 3 && savedfemaletype == "dress")
+            {
+
+            }*/
+
+        else if (waw == 2 && savedgender == "male")
+        {
+          dimaletype.style.display = "block";
+          divgender.style.display = "none";
+        }
+            else if (waw == 3 && savedmaletype == "top")
+            {
+              divmaletype.style.display = "none";
+              divmaletops.style.display = "block";
+            }
+
+            else if (waw == 3 && savedmaletype == "bottom")
+            {
+              divmaletype.style.display = "none";
+              divmalebottoms.style.display = "block";
+            }
 }
 
       var algoliasearch = require('algoliasearch');
@@ -130,6 +163,20 @@ index.addObjects(contactsJSON, function(err, content) {
     console.error(err);
   }
 });
+
+index.setSettings({
+  'searchableAttributes': [
+    'lastname',
+    'firstname',
+    'company',
+    'email',
+    'city',
+    'address'
+  ]
+}, function(err, content) {
+  console.log(content);
+});
+
 index.setSettings({
   'customRanking': ['desc(followers)']
 }, function(err, content) {
@@ -155,3 +202,41 @@ index.search('california paint', function(err, content) {
 index.search('jimmie paint', function(err, content) {
   console.log(content.hits);
 });
+
+// Replace with your own values
+var searchClient = algoliasearch(
+  'DKG1T96OHW',
+  '
+••••••••••••••••••••••••••••••••' // search only API key, no ADMIN key
+);
+
+var search = instantsearch({
+  indexName: 'instant_search',
+  searchClient: searchClient,
+  routing: true,
+});
+
+search.addWidget(
+  instantsearch.widgets.configure({
+    hitsPerPage: 10,
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-box',
+    placeholder: 'Search for products',
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#hits',
+    templates: {
+      item: document.getElementById('hit-template').innerHTML,
+      empty: 'We didn\'t find any results for the search <em>"{{query}}"</em>',
+    },
+  })
+);
+
+search.start();
