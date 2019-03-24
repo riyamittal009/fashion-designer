@@ -127,7 +127,7 @@ if (waw == 0)
               three = "top";
               console.log(three);
             }
-                else if (savedfemaletops == "t-shirt")
+                else if (savedfemaletops == "tshirt")
                 {
                   four = "tshirt";
                   console.log(four);
@@ -166,10 +166,6 @@ if (waw == 0)
                     four = "skirt";
                 }
 
-          /*  else if (waw == 3 && savedfemaletype == "dress")
-            {
-            }*/
-
         else if (waw == 2 && savedgender == "male")
         {
           divmaletype.style.display = "block";
@@ -182,7 +178,7 @@ if (waw == 0)
               divmaletops.style.display = "block";
               three = "top";
             }
-                else if (savedmaletops == "t-shirt")
+                else if (savedmaletops == "tshirt")
                 {
                     four = "tshirt";
                 }
