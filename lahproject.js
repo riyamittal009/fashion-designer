@@ -212,7 +212,7 @@ function picture()
 
   if (waw==4 && three == "top")
   {
-    options.style.visibility = "visible"
+    options.style.visibility = "visible";
       for (var i=1; i<=3; i++)
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
@@ -221,7 +221,7 @@ function picture()
       for (var k=0; k<=2; k++)
       {
           var bottom = document.getElementById("bottom"+k)
-          x = Math.floor(Math.random()*3)+1;
+          x = Math.floor(Math.random()*5)+1;
           bottom.src = two+"bottom"+x+".webp";
       }
 
