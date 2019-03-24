@@ -159,11 +159,12 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Pacifico', cursive;
   color: #afafaf;
   font-style:normal;
   font-variant: normal;
+  padding-bottom: 20px;
 }
 
 /* The Name */
