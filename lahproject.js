@@ -118,20 +118,16 @@ if (waw == 0)
           divfemaletype.style.display = "block";
           divgender.style.display = "none";
           two = "female";
-          console.log(two);
         }
             else if (waw == 3 && savedfemaletype == "top")
             {
               divfemaletype.style.display = "none";
               divfemaletops.style.display="block";
               three = "top";
-              console.log(three);
             }
                 else if (savedfemaletops == "tshirt")
                 {
                   four = "tshirt";
-                  console.log(four);
-                  console.log("campaign.jpg");
                   picture();
                 }
                 else if (savedfemaletops == "fullsleeve")
@@ -209,4 +205,10 @@ if (waw == 0)
                 {
                     four = "shorts";
                 }
+                return one;
+                return two;
+                return three;
+                return four;
+                console.log(one+", "+two+", "+three+", "+four);
+
 }
