@@ -36,14 +36,14 @@ function savecolor()
 {
   savedcolor = color.options[color.selectedIndex].value;
   one = savedcolor;
-  console.log(savedcolor);
+  console.log(one);
 }
 
 var gender = document.getElementById("gender");
 function savegender()
 {
   savedgender = gender.options[gender.selectedIndex].value;
-  console.log(savedgender);
+  // console.log(savedgender);
 }
 
 var femaletype = document.getElementById("femaletype");
@@ -114,6 +114,7 @@ if (waw == 0)
           divfemaletype.style.display = "block";
           divgender.style.display = "none";
           two = "female";
+          console.log(two);
         }
             else if (waw == 3 && savedfemaletype == "top")
             {
@@ -202,16 +203,11 @@ if (waw == 0)
                 }
                 else if (savedmalebottoms == "shorts")
                 {
-                  four = "shorts";
+                    four = "shorts";
                 }
 
-                console.log(one, two, three, four);
-
-                if (waw==5){
-                picture();}
 }
-
-function picture()
+/*function picture()
 {
 handleimage.src=one+two+three+four + ".png";
-}
+}*/
