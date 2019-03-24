@@ -4,7 +4,7 @@
     <title>Online Fashion Designer</title>
 		<link rel="stylesheet" type="text/css" href="lahproject.css">
     <link rel="shortcut icon" href=".ico">
-    <link href=""https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600"" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <body>
     <div class="announcement">
@@ -26,7 +26,7 @@
       </tr>
     </table>
 
-    <p class="title">Hi! Welcome to our Online Fashion Designer. Tell us what you want to base your outfit off of. </p>
+    <p class="title">Welcome to the Online Fashion Designer. Tell us what you want to base your outfit off of. </p>
     <br><br>
     <div id="divcolor">
       <h4>Color</h4>
@@ -66,6 +66,16 @@
       </select>
     </div>
 
+    <div id="divunisextype">
+      <h4>Female Type</h4>
+      <select id="unisextype" onchange="saveunisextype();">
+        <option id="select" value="select">Select</option>
+        <option value="top">Top</option>
+        <option value="bottom">Bottom</option>
+        <option value="dress">Dress</option>
+      </select>
+    </div>
+
     <div id="divmaletype">
       <h4>Male Type</h4>
       <select id="maletype" onchange="savemaletype();">
@@ -87,6 +97,32 @@
         <option value="hoodie">Hoodie</option>
         <option value="sweater">Sweater</option>
         <option value="jacket">Jacket</option>
+      </select>
+    </div>
+
+    <div id="divunisextops">
+      <h4>Unisex Tops Type</h4>
+      <select id="unisextops" onchange="saveunisextops();">
+        <option id="select" value="select">Select</option>
+        <option value="T-shirt">T-shirt</option>
+        <option value="fullsleeve"> Full sleeve </option>
+        <option value="offshoulder">Off the shoulder top</option>
+        <option value="tanktop">tanktop</option>
+        <option value="cropped">Cropped-shirt</option>
+        <option value="hoodie">Hoodie</option>
+        <option value="sweater">Sweater</option>
+        <option value="jacket">Jacket</option>
+      </select>
+    </div>
+
+    <div id="divunisexbottoms">
+      <h4>Unisex Bottoms Type</h4>
+      <select id="unisexbottoms" onchange="saveunisexbottoms();">
+        <option id="select" value="select">Select</option>
+        <option value="jeans">Jeans</option>
+        <option value="leggings">Leggings</option>
+        <option value="skirt">Skirt</option>
+        <option value="sweatpants">Sweatpants</option>
       </select>
     </div>
 

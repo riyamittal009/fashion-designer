@@ -7,6 +7,9 @@ var divfemaletype = document.getElementById("divfemaletype");
 var divmaletype = document.getElementById("divmaletype");
 var divfemaletops = document.getElementById("divfemaletops");
 var divfemalebottoms = document.getElementById("divfemalebottoms");
+var divunisextype = document.getElementById("divunisextype");
+var divunisextops = document.getElementById("divunisextops");
+var divunisexbottoms = document.getElementById("divunisexbottoms");
 var divmaletops = document.getElementById("divmaletops");
 var divmalebottoms = document.getElementById("divmalebottoms");
 
@@ -27,7 +30,9 @@ divfemaletops.style.display = "none";
 divfemalebottoms.style.display = "none";
 divmaletops.style.display = "none";
 divmalebottoms.style.display = "none";
-
+divunisextops.style.display = "none";
+divunisexbottoms.style.display = "none";
+divunisextype.style.display="none";
 
 var color = document.getElementById("color");
 function savecolor()
@@ -71,6 +76,27 @@ function savefemalebottoms()
   console.log(savedfemalebottoms);
 }
 
+var unisextops = document.getElementById("unisextops");
+function saveunisextops()
+{
+  savedunisextops = femaletops.options[unisextops.selectedIndex].value;
+  console.log(savedunisextops);
+}
+
+var unisexbottoms = document.getElementById("funisexbottoms");
+function saveunisexbottoms()
+{
+  savedunisexbottoms = unisexbottoms.options[unisexbottoms.selectedIndex].value;
+  console.log(savedunisexbottoms);
+}
+
+var unisextype = document.getElementById("unisextype");
+function saveunisextype()
+{
+  savedunisextype = unisextype.options[unisextype.selectedIndex].value;
+  console.log(savedunisextype);
+}
+
 var maletops = document.getElementById("maletops");
 function savemaletops()
 {
@@ -105,7 +131,7 @@ if (waw == 0)
       divgender.style.display = "block";
       divcolor.style.display = "none";
     }
-        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
+        else if (waw == 2 && savedgender == "female"))
         {
           divfemaletype.style.display = "block";
           divgender.style.display = "none";
@@ -124,9 +150,29 @@ if (waw == 0)
 
           /*  else if (waw == 3 && savedfemaletype == "dress")
             {
-
             }*/
 
+            else if (waw == 2 && savedgender == "unisex"))
+            {
+              divunisextype.style.display = "block";
+              divgender.style.display = "none";
+            }
+                else if (waw == 3 && savedunisextype == "top")
+                {
+                  divunisextype.style.display = "none";
+                  divunisextops.style.display="block";
+                }
+
+                else if (waw == 3 && savedunisextype == "bottom")
+                {
+                  divunisextype.style.display = "none";
+                  divunisexebottoms.style.display="block"
+                }
+
+        else if (waw == 2 && savedgender == "unisex"){
+          divfemaletype.style.display = "block";
+          divgender.style.display = "none";
+        }
         else if (waw == 2 && savedgender == "male")
         {
           divmaletype.style.display = "block";

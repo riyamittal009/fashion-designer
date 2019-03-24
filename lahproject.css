@@ -3,7 +3,8 @@ html {
 	background-attachment: fixed;
   text-align: center;
 	overflow-x: hidden;
-	font-family: "Times New Roman", sans-serif;
+	font-family: 'Pacifico', cursive;
+
 }
 select {
 	background: #fff7c0;
@@ -36,13 +37,14 @@ a {
 	100% {background: #2D00FF;}
 }
 .title {
-	font-size: 5em;
+	font-size: 4em;
 	margin-top: 100px;
 	/*font-weight: bold;
 	font-style: italic; */
 	animation-name: title;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	font-family: 'Pacifico', cursive;
 }
 @keyframes title {
 	0% {color: #6F0CE8;}
