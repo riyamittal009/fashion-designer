@@ -81,8 +81,12 @@ function nextphase()
 {
   waw++;
   console.log(waw);
+  monitor();
 }
 
+function monitor()
+{
+  
 if (waw == 0)
 {
   divcolor.style.display = "block";
@@ -97,6 +101,7 @@ if (waw == 0)
           divfemaletype.style.display == "block";
           divgender.style.display == "none";
         }
+}
 
        var algoliasearch = require('algoliasearch');
         // var algoliasearch = require('algoliasearch/reactnative');
