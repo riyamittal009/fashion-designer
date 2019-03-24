@@ -15,7 +15,7 @@ button {
 	padding: 10px 40px;
 	color: white;
 	animation-name: button;
-	animation-duration: 10s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	margin-top: 30px;
 	cursor: pointer;
@@ -24,6 +24,8 @@ button {
 a {
 	text-decoration: none;
 	color: white;
+	margin-left: 10px;
+margin-right: 10px;
 }
 @keyframes button {
 	0% {background: #2D00FF;}
@@ -35,7 +37,7 @@ a {
 	font-weight: bold;
 	font-style: italic;
 	animation-name: title;
-	animation-duration: 10s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 }
 @keyframes title {

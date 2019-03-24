@@ -41,6 +41,20 @@ function savefemalebottoms()
   console.log(savedfemalebottoms);
 }
 
+var maletops = document.getElementById("maletops");
+function savemaletops()
+{
+  var savedmaletops = maletops.options[maletops.selectedIndex].value;
+  console.log(savedmaletops);
+}
+
+var malebottoms = document.getElementById("malebottoms");
+function savemalebottoms()
+{
+  var savedmalebottoms = malebottoms.options[malebottoms.selectedIndex].value;
+  console.log(savedmalebottoms);
+}
+
 /*{
   var "saved"+info = info.options[info.selectedIndex].value;
   console.log("saved"+info);
