@@ -72,16 +72,6 @@ a {
 	0% {left: 100%;}
 	100% {left: -40%;}
 }
-.nav-bar {
-	color: #FF0000
-	font-size: 20px
-	font-weight: bold;
-}
-.nav-bar:hover {
-	color: #FFFF00
-	font-size: 20px
-	font-weight: bold;
-}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, acronym, address, big, cite, code,
@@ -152,4 +142,44 @@ p {
 	font-variant: normal;
 	color: #FFFF00;
 
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    list-style-type: none;
+    background-color: #102f60;
+    overflow: hidden;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.nav-item {
+  margin: 0px;
+  display: block;
+  padding: 14px 16px;
+  float: left;
+
+}
+
+.nav-item:hover {
+  background-color: #051630;
+}
+
+.nav-item a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-align: center;
 }
