@@ -1,8 +1,9 @@
 html {
-	background: linear-gradient(pink, magenta);
+	background: url("https://i.imgur.com/NYEpsWA.png");
 	background-attachment: fixed;
   text-align: center;
 	overflow-x: hidden;
+	font-family: 'Libre Baskerville', serif;
 }
 select {
 	background: #fff7c0;
@@ -26,7 +27,7 @@ a {
 	text-decoration: none;
 	color: white;
 	margin-left: 10px;
-margin-right: 10px;
+	marign-right: 10px;
 }
 @keyframes button {
 	0% {background: #2D00FF;}
@@ -35,8 +36,8 @@ margin-right: 10px;
 }
 .title {
 	font-size: 2em;
-	font-weight: bold;
-	font-style: italic;
+	/*font-weight: bold;
+	font-style: italic; */
 	animation-name: title;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
@@ -51,7 +52,7 @@ margin-right: 10px;
 }
 .words {
 	font-size: 20px;
-	width: 359px;
+	width: 380px;
 	color: gold;
 }
 .move {
@@ -79,7 +80,7 @@ margin-right: 10px;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,

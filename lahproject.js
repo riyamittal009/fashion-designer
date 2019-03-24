@@ -129,7 +129,7 @@ if (waw == 0)
 
         else if (waw == 2 && savedgender == "male")
         {
-          dimaletype.style.display = "block";
+          divmaletype.style.display = "block";
           divgender.style.display = "none";
         }
             else if (waw == 3 && savedmaletype == "top")
@@ -144,99 +144,3 @@ if (waw == 0)
               divmalebottoms.style.display = "block";
             }
 }
-
-      var algoliasearch = require('algoliasearch');
-        // var algoliasearch = require('algoliasearch/reactnative');
-        // var algoliasearch = require('algoliasearch/lite');
-        // import * as algoliasearch from 'algoliasearch'; // When using TypeScript
-
-        // or just use algoliasearch if you are using a <script> tag
-        // if you are using AMD module loader, algoliasearch will not be defined in window,
-        // but in the AMD modules of the page
-
-        var client = algoliasearch('DKG1T96OHW', '166c41803287eebeeaba52a556f58e2a');
-        var index = client.initIndex('contacts');
-var contactsJSON = require('./contacts.json');
-
-index.addObjects(contactsJSON, function(err, content) {
-  if (err) {
-    console.error(err);
-  }
-});
-
-index.setSettings({
-  'searchableAttributes': [
-    'lastname',
-    'firstname',
-    'company',
-    'email',
-    'city',
-    'address'
-  ]
-}, function(err, content) {
-  console.log(content);
-});
-
-index.setSettings({
-  'customRanking': ['desc(followers)']
-}, function(err, content) {
-  console.log(content);
-});
-
-// Search for a first name
-index.search('jimmie', function(err, content) {
-  console.log(content.hits);
-});
-
-// Search for a first name with typo
-index.search('jimie', function(err, content) {
-  console.log(content.hits);
-});
-
-// Search for a company
-index.search('california paint', function(err, content) {
-  console.log(content.hits);
-});
-
-// Search for a first name and a company
-index.search('jimmie paint', function(err, content) {
-  console.log(content.hits);
-});
-
-// Replace with your own values
-var searchClient = algoliasearch(
-  'DKG1T96OHW',
-  '
-••••••••••••••••••••••••••••••••' // search only API key, no ADMIN key
-);
-
-var search = instantsearch({
-  indexName: 'instant_search',
-  searchClient: searchClient,
-  routing: true,
-});
-
-search.addWidget(
-  instantsearch.widgets.configure({
-    hitsPerPage: 10,
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-box',
-    placeholder: 'Search for products',
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#hits',
-    templates: {
-      item: document.getElementById('hit-template').innerHTML,
-      empty: 'We didn\'t find any results for the search <em>"{{query}}"</em>',
-    },
-  })
-);
-
-search.start();

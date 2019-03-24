@@ -4,8 +4,7 @@
     <title>Online Fashion Designer</title>
 		<link rel="stylesheet" type="text/css" href="lahproject.css">
     <link rel="shortcut icon" href=".ico">
-    <meta charset="UTF-8">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.1.1/themes/algolia.css" integrity="sha256-4SlodglhMbXjGQfNWiCBLSGNiq90FUw3Mtre9u4vLG8=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   </head>
   <body>
     <div class="announcement">
@@ -18,7 +17,7 @@
           <a href="https://www.google.com" target="_blank">
             Home
           </a>
-          <a href="https://www.yahoo.com" target="_blank">
+          <a href="about.html" target="_blank">
             About Us
           </a>
           <a href="https://www.bing.com" target="_blank">
@@ -26,28 +25,6 @@
           </a>
       </tr>
     </table>
-
-    <header>
-        <div id="search-box"></div>
-      </header>
-
-      <main>
-          <div id="hits"></div>
-          <div id="pagination"></div>
-      </main>
-
-      <script type="text/html" id="hit-template">
-        <div class="hit">
-          <p class="hit-name">
-            {{#helpers.highlight}}{ "attribute": "firstname" }{{/helpers.highlight}}
-            {{#helpers.highlight}}{ "attribute": "lastname" }{{/helpers.highlight}}
-          </p>
-        </div>
-      </script>
-
-      <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.min.js" integrity="sha256-NSTRUP9bvh8kBKi7IHQSmOrMAdVEoSJFBbTA+LoRr3A=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0" integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
-      <script src="app.js"></script>
 
     <p class="title">Hi! Welcome to our Online Fashion Designer. Tell us what you want to base your outfit off of. </p>
     <br><br>
