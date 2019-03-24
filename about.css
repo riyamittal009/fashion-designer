@@ -1,0 +1,51 @@
+h1 {
+  font-size: 96px;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #001f3f;
+  font-style:normal;
+  font-variant: normal;
+}
+
+/* About Us */
+
+h2 {
+  font-size: 60px;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #0074D9;
+  font-style:normal;
+  font-variant: normal;
+}
+
+/* Meet the Team */
+
+h3 {
+  font-size: 36px;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #7FDBFF;
+  font-style:normal;
+  font-variant: normal;
+}
+
+/* The Name */
+
+p{
+  font-size: 16px;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #39CCCC;
+  font-style:normal;
+  font-variant: normal;
+}
+
+/* About that Person */
+
+header {
+  display: block;
+  color: #105916;
+  margin: auto;
+}
+
+footer {
+  display:block;
+  color: #105916;
+  margin: auto;
+}

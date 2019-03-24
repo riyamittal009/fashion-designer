@@ -205,6 +205,8 @@ if (waw == 0)
                   four = "shorts";
                 }
 
+                console.log(one, two, three, four);
+
                 if (waw==5){
                 picture();}
 }
