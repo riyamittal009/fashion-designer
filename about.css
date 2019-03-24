@@ -358,28 +358,80 @@ max-height: 4000px;
 
 #top1 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #top2 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #top3 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom1 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom2 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom3 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes flash {
+	0% {border-color: blue;}
+	25% {border-color: purple;}
+	50% {border-color: green;}
+	75% {border-color: white;}
+	100% {border-color: blue}
 }
 .merge {
 	width: 285px;
-	height: 50px;
+	height: 44px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 .words {
   font-size: 24px;
