@@ -24,7 +24,7 @@ var four;
 
 function picture()
 {
-  document.getElementById("testrun").src=one+two+three+four+".jpg";
+  document.getElementById("testrun").src=one+two+three+four+".webp";
 
 }
 
