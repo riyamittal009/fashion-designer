@@ -35,6 +35,7 @@ var color = document.getElementById("color");
 function savecolor()
 {
   savedcolor = color.options[color.selectedIndex].value;
+  one = savedcolor;
   console.log(savedcolor);
 }
 
@@ -94,6 +95,8 @@ function nextphase()
   monitor();
 }
 
+var handleimage = document.getElementById("testrun");
+
 function monitor()
 {
 
@@ -110,18 +113,49 @@ if (waw == 0)
         {
           divfemaletype.style.display = "block";
           divgender.style.display = "none";
+          two = "female";
         }
             else if (waw == 3 && savedfemaletype == "top")
             {
               divfemaletype.style.display = "none";
               divfemaletops.style.display="block";
+              three = "top";
             }
+                else if (savedfemaletops == "t-shirt")
+                {
+                  four = "tshirt";
+                }
+                else if (savedfemaletops == "fullsleeve")
+                {
+                  four = "fullsleeve";
+                }
+                else if (savedfemaletops == "tanktop")
+                {
+                  four = "tanktop";
+                }
+                else if (savedfemaletops == "hoodie")
+                {
+                  four = "hoodie";
+                }
 
             else if (waw == 3 && savedfemaletype == "bottom")
             {
               divfemaletype.style.display = "none";
               divfemalebottoms.style.display="block"
+              three = "bottom";
             }
+                else if (savedfemalebottoms == "jeans")
+                {
+                    four = "jeans";
+                }
+                else if (savedfemalebottoms == "leggings")
+                {
+                    four = "leggings";
+                }
+                else if (savedfemalebottoms == "skirt")
+                {
+                    four = "skirt";
+                }
 
           /*  else if (waw == 3 && savedfemaletype == "dress")
             {
@@ -131,17 +165,49 @@ if (waw == 0)
         {
           divmaletype.style.display = "block";
           divgender.style.display = "none";
+          two = "male";
         }
             else if (waw == 3 && savedmaletype == "top")
             {
               divmaletype.style.display = "none";
               divmaletops.style.display = "block";
+              three = "top";
             }
+                else if (savedmaletops == "t-shirt")
+                {
+                    four = "tshirt";
+                }
+                else if (savedmaletops == "fullsleeve")
+                {
+                  four = "fullsleeve";
+                }
+                else if (savedmaletops == "hoodie")
+                {
+                  four = "hoodie";
+                }
 
             else if (waw == 3 && savedmaletype == "bottom")
             {
               divmaletype.style.display = "none";
               divmalebottoms.style.display = "block";
+              three = "bottom";
             }
+                else if (savedmalebottoms == "jeans")
+                {
+                    four = "jeans";
+                }
+                else if (savedmalebottoms == "sweatpants")
+                {
+                    four = "sweatpants";
+                }
+                else if (savedmalebottoms == "shorts")
+                {
+                  four = "shorts";
+                }
+                picture();
 }
+
+function picture()
+{
+handleimage.src=one+two+three+four + ".png";
 }
