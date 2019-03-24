@@ -3,29 +3,38 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="about.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <title>About Us</title>
   </head>
   <body>
     <header>
+      <div class="nav-color">
       <ul class="nav-bar">
-        <li class="nav-item">
-            <a href="lahproj.html">
-              Home
-            </a>
+        <li class="nav-item-2">
+          Fashion Designer
         </li>
+        <a href="contact.html">
+          <li class="nav-item">
+            Contact Us
+          </li>
+        </a>
 
+      <a href="about.html">
         <li class="nav-item">
-            <a href="about.html">
-              About Us
-            </a>
+              <u>
+                About Us
+              </u>
         </li>
+      </a>
 
+      <a href="lahproj.html">
         <li class="nav-item">
-            <a href="contact.html">
-              Contact Us
-            </a>
+          Home
         </li>
+      </a>
       </ul>
+    </div>
     </header>
 
 
@@ -35,63 +44,250 @@
 
 
       <div class="center-text">
+
         <h1>
-          About Us
+          About
+          <span style="color: #3D9990;">
+            Us
+          </span>
         </h1>
+
+
+
+
+
+
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="12345.png" style="width:100%" >
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="12345.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="12345.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+        </div>
+        <br>
+
+
+
+
+<style media="screen">
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1400px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+</style>
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
       </div>
+
       <div class="center-text">
         <h2>
           Meet the Team
         </h2>
       </div>
-      <div class="">
 
+      <div class="wrap">
+       <div class="more" style="margin-right: 20px; margin-bottom: 20px;">
+          <h3>Jack Luo</h3>
+         <br>
+          <p>Heyo, I am Jack, one of the legends on the century, coded for three years, have half a year of experience, but it doesn’t matter, I made the design, about us page, and contact page, well with the help of Jimmy. Anyways, I learned some CSS, HTMl, and Javascript during the summers. And I love to play games, so much I played games half of the hackathon. Clash Royale is great game, see you in Champion Area, oh, email me at jack145945@gmail.com</p>
+       </div>
+       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-left: 20px; margin-bottom: 20px;">
       </div>
-    <h3 id="left-text">
-      Jack Luo
-    </h3>
-    <p id="left-text">
-fasjkhfslfhsajfhaskfjlashfklashfklh sfha kah sfklsh lkfasfhsakl fklashklf salfkhlh lkh
-    </p>
-    <img src="" alt="">
+      <div class="wrap">
+       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+       <div class="more" style="margin-left: 20px; margin-top: 20px; margin-bottom: 20px;">
+          <h3>Jimmy Pan</h3>
+         <br>
+          <p>Hi! My name is Jimmy Pan, and I have been coding for less then a year. I am currently taking Web Page Design where I learn html and css. Even though I have not been coding for very long, I am still pretty good at html and css. Other things about me is that I like to play games. I especially like to play Minecraft with my friends. If you are curious about what I play on Minecraft, I mainly play Bedwars on the Hypixel Network. See you around! (=｀ω´=)
+</p>
+       </div>
+      </div>
+      <div class="wrap">
+       <div class="more" style="margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+          <h3>Anika Ahora</h3>
+         <br>
+          <p>Hi! My name is Anika Arora and I’ve been coding for about three years. Through those years, I’ve learned HTM, CSS, JavaScript, and some Python. I love to code but I also like I love to play sports like basketball and tennis in my free time.
+</p>
+       </div>
+       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-left: 20px; margin-top: 20px; margin-bottom: 20px;">
+      </div>
+      <div class="wrap">
+       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-right: 20px; margin-top: 20px;">
+       <div class="more" style="margin-left: 20px; margin-top: 20px;">
+          <h3>Riya Mittal</h3>
+         <br>
+          <p>Hi! My name is Riya Mittal and I’ve been coding on-and-off for about three years. Most of my experience is in web development: HTML, CSS, JS, and Python. I love coding because it’s so challenging and fun at the same time; it really allows me to think outside of the box and I hope to do it for a long time :)
+</p>
+       </div>
+      </div>
 
-    <br><br>
-
-    <h3 id="right-text">
-      Jimmy Pan
-    </h3>
-    <img src="" alt="">
-    <p id="right-text">
-      sgdngkdsngkldsngkdsnklgndsgksdgnkldsgndsklgkln
-
-    </p>
-    <h3 id="left-text">
-      Anika Arora
-    </h3>
-    <p id="left-text">
-      gslmdskngkdsngkdsngnsdlgldsnkgkldsngd
-    </p>
-    <img src="" alt="">
-
-    <br><br>
-
-    <h3 id="right-text">
-      Riya  Mittal
-    </h3>
-    <img src="" alt="">
-    <p id="right-text">
-      sgdngdskngdsnkgldsnklgndsklgldsnkgl
-
-    </p>
-    <footer>
-      <p>
-        Posted by Jack Luo
-      </p>
-      <p>Contact information:
-        <a href="mailto:jack145945@gmail.com">
-          jack145945@gmail.com
-        </a>.
-      </p>
+      <div class="footer">
+        <div class="bottom-section-1">
+          <h4 style="color: #dfdfdf">
+            Fashion Designer
+          </h4>
+          <br>
+          <h4>
+            20488 Stevens Creek Blvd
+          </h4>
+          <br>
+          <h4>
+            Cupertino, CA
+          </h4>
+          <br>
+          <a href="mailto:jack145945@gmail.com">
+            Get in Touch
+          </a>
+        </div>
+        <div class="bottom-section-2">
+          <img src="12345.png" alt="Logo" height="150px" width="180px">
+        </div>
+        <div class="bottom-section-3">
+          <h4>Contact information:
+            <a href="mailto:jack145945@gmail.com">
+              jack145945@gmail.com
+            </a>
+          </h4>
+            <br>
+          <h4>
+            2019 Copyright: Fashion Designer
+          </h4>
+            <br>
+          <h4>
+            (123) 456-7890
+          </h4>
+          <br>
+          <a href="www.loser.com">
+            Don't press this
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

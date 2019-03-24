@@ -42,35 +42,53 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 h1 {
-  font-size: 96px;
-  font-family: "Times New Roman", Times, sans-serif;
-  color: #001f3f;
-  font-style:normal;
+  font-size: 128px;
+  font-family: 'Baloo Chettan', sans-serif;
+  color: #696969;
+  font-style: normal;
   font-variant: normal;
   text-align: center;
   display: block;
-  background-color: White
+  background-color: #ffffff;
+  padding-bottom: 15px;
+
+
 }
 
 /* About Us */
 
 h2 {
-  font-size: 60px;
-  font-family: "Times New Roman", Times, sans-serif;
-  color: #0074D9;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  color: #696969;
   font-style:normal;
   font-variant: normal;
   text-align: center;
   display: block;
-  background-color: Grey
+  background-color: #ffffff;
+  padding-bottom: 20px;
 }
 
 /* Meet the Team */
 
 h3 {
-  font-size: 36px;
-  font-family: "Times New Roman", Times, sans-serif;
-  color: #7FDBFF;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  color: #000000;
+  font-style:normal;
+  font-variant: normal;
+  spacing: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  color: #afafaf;
   font-style:normal;
   font-variant: normal;
 }
@@ -78,11 +96,16 @@ h3 {
 /* The Name */
 
 p{
-  font-size: 16px;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
   color: #39CCCC;
   font-style:normal;
   font-variant: normal;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 /* About that Person */
@@ -98,6 +121,46 @@ footer {
   color: #105916;
   margin: auto;
 }
+
+.footer{
+  background-color: #3e3c36;
+  display: block;
+  height: 200px;
+  list-style-type: none;
+  overflow: hidden;
+  clear: both;
+}
+
+.bottom-section-1 {
+  display: inline-block;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 200px
+}
+
+
+.bottom-section-2 {
+  display: inline-block;
+  float: none;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 40px;
+
+}
+.bottom-section-3 {
+  display: inline-block;
+  float: right;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 200px;
+
+}
+
+
 
 .left-text {
   text-align: left;
@@ -117,17 +180,85 @@ footer {
   height: auto;
   list-style-type: none;
   overflow: hidden;
-  background-color: grey;
+  background-color: #3D9970;
+  display: block;
 }
 
 .nav-item {
   background-color: #3D9970;
-  margin: 2px;
+  margin: 0px;
+  padding: 14px 14px;
+  float: right;
+  font-size: 24px;
+}
+
+.nav-item:hover {
+  background-color: #3D9990;
+  margin: 0px;
+  padding: 14px 14px;
+  float: right;
+  font-size: 24px;
+}
+
+.nav-item-2 {
+  background-color: #3D9970;
+  margin: 0px;
   padding: 14px 14px;
   float: left;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  margin-right: 0px;
+  font-size: 24px;
 }
 
 .about-people {
   background-color: Yellow;
 
+}
+
+a {
+  color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.body {
+  background-color: #dddddd;
+  height: 1800px;
+  padding: 40px;
+
+}
+.more {
+  width: 480px;
+  height: 400px;
+  float: left;
+}
+.wrap {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  float: left;
+}
+.address {
+  outline: none;
+  border-style: dotted;
+  border-color: blue;
+  background: #aaffff;
+  color: red;
+  width: 500px;
+  margin-top: 10px;
+}
+.form {
+  text-align: center;
+  padding: 10px;
+}
+.submit {
+  margin-top: 5px;
+  background: blue;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }

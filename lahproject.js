@@ -206,6 +206,8 @@ if (waw == 0)
 }
 
 var x;
+var prevx;
+var currx;
 
 function picture()
 {
@@ -220,6 +222,7 @@ function picture()
       {
           var bottom = document.getElementById("bottom"+k)
           x = Math.floor(Math.random()*5)+1;
+          prevx = x;
           bottom.src = two+"bottom"+x+".webp";
       }
 
