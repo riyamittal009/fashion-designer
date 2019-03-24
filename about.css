@@ -133,7 +133,7 @@ h2 {
 h5 {
   font-size: 85px;
   font-family: 'Pacifico', cursive;
-  color: #A4D7FF;
+  color: #B1E6FF;
   font-style:normal;
   font-variant: normal;
   text-align: center;
@@ -255,12 +255,12 @@ footer {
   height: auto;
   list-style-type: none;
   overflow: hidden;
-  background-color: #A4D7FF;
+  background-color: #B1E6FF;
   display: block;
 }
 
 .nav-item {
-  background-color: #A4D7FF;
+  background-color: #B1E6FF;
   margin: 0px;
   padding: 14px 14px;
   float: right;
@@ -268,7 +268,7 @@ footer {
 }
 
 .nav-item:hover {
-  background-color: #A4D7FF;
+  background-color: #B1E6FF;
   margin: 0px;
   padding: 14px 14px;
   float: right;
@@ -276,7 +276,7 @@ footer {
 }
 
 .nav-item-2 {
-  background-color: #A4D7FF;
+  background-color: #B1E6FF;
   margin: 0px;
   padding: 14px 14px;
   float: left;
