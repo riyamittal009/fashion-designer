@@ -45,6 +45,9 @@ a {
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	font-family: 'Pacifico', cursive;
+	background: white;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 @keyframes title {
 	0% {color: #6F0CE8;}
