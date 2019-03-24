@@ -204,20 +204,22 @@ if (waw == 0)
 
 
 }
-
+var options = document.getElementById("options")
 var x;
 var next;
 function picture()
 {
+
   if (waw==4 && three == "top")
   {
-    x = Math.floor(Math.random()*5)+1;
+    options.style.visibility = "visible"
+    x = Math.floor(Math.random()*3)+1;
       for (var i=1; i<=3; i++)
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
       }
 
-      for (var k=1; k<=3; k++)
+      for (var k=0; k<=2; k++)
       {
           var bottom = document.getElementById("bottom"+k)
           next = k+x
@@ -233,7 +235,7 @@ function picture()
             document.getElementById("bottom" + i).src=one+two+three+four+".webp";
         }
 
-        for (var k=1; k<=3; k++)
+        for (var k=0; k<=2; k++)
         {
             var top = document.getElementById("top"+k)
             next = k+x
