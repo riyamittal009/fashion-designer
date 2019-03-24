@@ -45,6 +45,27 @@ margin-right: 10px;
 	50% {color: #2D00FF;}
 	100% {color: #6F0CE8;}
 }
+.announcement {
+	background: blue;
+}
+.words {
+	font-size: 20px;
+	width: 359px;
+	color: gold;
+}
+.move {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	animation-name: marquee;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-style: italic;
+}
+@keyframes marquee {
+	0% {left: 100%;}
+	100% {left: -40%;}
+}
 .nav-bar {
 	color: #FF0000
 	font-size: 20px

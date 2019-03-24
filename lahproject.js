@@ -10,6 +10,15 @@ var divfemalebottoms = document.getElementById("divfemalebottoms");
 var divmaletops = document.getElementById("divmaletops");
 var divmalebottoms = document.getElementById("divmalebottoms");
 
+var savedcolor;
+var savedgender;
+var savedfemaletype;
+var savedmaletype;
+var savedfemaletops;
+var savedfemalebottoms;
+var savedmaletops;
+var savedmalebottoms;
+
 divcolor.style.display = "none";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
@@ -23,56 +32,56 @@ divmalebottoms.style.display = "none";
 var color = document.getElementById("color");
 function savecolor()
 {
-  var savedcolor = color.options[color.selectedIndex].value;
+  savedcolor = color.options[color.selectedIndex].value;
   console.log(savedcolor);
 }
 
 var gender = document.getElementById("gender");
 function savegender()
 {
-  var savedgender = gender.options[gender.selectedIndex].value;
+  savedgender = gender.options[gender.selectedIndex].value;
   console.log(savedgender);
 }
 
 var femaletype = document.getElementById("femaletype");
 function savefemaletype()
 {
-  var savedfemaletype = femaletype.options[femaletype.selectedIndex].value;
+  savedfemaletype = femaletype.options[femaletype.selectedIndex].value;
   console.log(savedfemaletype);
 }
 
 var maletype = document.getElementById("maletype");
 function savemaletype()
 {
-  var savedmaletype = maletype.options[maletype.selectedIndex].value;
+  savedmaletype = maletype.options[maletype.selectedIndex].value;
   console.log(savedmaletype);
 }
 
 var femaletops = document.getElementById("femaletops");
 function savefemaletops()
 {
-  var savedfemaletops = femaletops.options[femaletops.selectedIndex].value;
+  savedfemaletops = femaletops.options[femaletops.selectedIndex].value;
   console.log(savedfemaletops);
 }
 
 var femalebottoms = document.getElementById("femalebottoms");
 function savefemalebottoms()
 {
-  var savedfemalebottoms = femalebottoms.options[femalebottoms.selectedIndex].value;
+  savedfemalebottoms = femalebottoms.options[femalebottoms.selectedIndex].value;
   console.log(savedfemalebottoms);
 }
 
 var maletops = document.getElementById("maletops");
 function savemaletops()
 {
-  var savedmaletops = maletops.options[maletops.selectedIndex].value;
+  savedmaletops = maletops.options[maletops.selectedIndex].value;
   console.log(savedmaletops);
 }
 
 var malebottoms = document.getElementById("malebottoms");
 function savemalebottoms()
 {
-  var savedmalebottoms = malebottoms.options[malebottoms.selectedIndex].value;
+  savedmalebottoms = malebottoms.options[malebottoms.selectedIndex].value;
   console.log(savedmalebottoms);
 }
 
@@ -103,7 +112,7 @@ if (waw == 0)
         }
 }
 
-    /*   var algoliasearch = require('algoliasearch');
+      var algoliasearch = require('algoliasearch');
         // var algoliasearch = require('algoliasearch/reactnative');
         // var algoliasearch = require('algoliasearch/lite');
         // import * as algoliasearch from 'algoliasearch'; // When using TypeScript
@@ -120,4 +129,29 @@ index.addObjects(contactsJSON, function(err, content) {
   if (err) {
     console.error(err);
   }
-}); */
+});
+index.setSettings({
+  'customRanking': ['desc(followers)']
+}, function(err, content) {
+  console.log(content);
+});
+
+// Search for a first name
+index.search('jimmie', function(err, content) {
+  console.log(content.hits);
+});
+
+// Search for a first name with typo
+index.search('jimie', function(err, content) {
+  console.log(content.hits);
+});
+
+// Search for a company
+index.search('california paint', function(err, content) {
+  console.log(content.hits);
+});
+
+// Search for a first name and a company
+index.search('jimmie paint', function(err, content) {
+  console.log(content.hits);
+});
