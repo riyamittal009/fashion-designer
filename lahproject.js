@@ -22,6 +22,13 @@ var two;
 var three;
 var four;
 
+var handleimage = document.getElementById("testrun");
+
+function picture()
+{
+  handleimage.src="campaign.jpg";
+}
+
 divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
@@ -94,8 +101,6 @@ function nextphase()
   console.log(waw);
   monitor();
 }
-
-var handleimage = document.getElementById("testrun");
 
 function monitor()
 {
@@ -209,10 +214,4 @@ if (waw == 0)
                 {
                     four = "shorts";
                 }
-}
-
-
-function picture()
-{
-handleimage.src="campaign.jpg";
 }
