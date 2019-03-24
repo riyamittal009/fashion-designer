@@ -2,9 +2,11 @@
 <html>
   <head>
     <title>Online Fashion Designer</title>
-		<link rel="stylesheet" type="text/css" href="lahproject.css">
+		<link rel="stylesheet" type="text/css" href="about.css">
     <link rel="shortcut icon" href=".ico">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   </head>
   <body>
     <div class="announcement">
@@ -12,32 +14,39 @@
             <p class="words">Announcement: Welcome to our new site!</p>
         </div>
     </div>
-    <ul class="nav-bar">
-      <div class="merge">
-      <a href="lahproj.html">
-        <li class="nav-item">
-            <u>
-              Home
-            </u>
-          </li>
-      </a>
-      <a href="about.html">
-        <li class="nav-item">
+    <header>
+      <div class="nav-color">
+      <ul class="nav-bar">
+        <li class="nav-item-2">
+          Fashion Designer
+        </li>
+        <a href="contact.html">
+          <li class="nav-item">
             Contact Us
           </li>
-      </a>
+        </a>
+
       <a href="about.html">
         <li class="nav-item">
             About Us
         </li>
       </a>
+
+      <a href="lahproj.html">
+        <li class="nav-item">
+          <u>
+            Home
+          </u>
+        </li>
+      </a>
+      </ul>
     </div>
-    </ul>
+    </header>
 
     <p class="title">Welcome to the Online Fashion Designer.</p>
     <br><br>
     <div id="divcolor">
-      <p>Color</p>
+      <p>What color is it?</p>
       <select id="color" onchange="savecolor();">
         <option id="select" value="select">Select</option>
         <option id="red" value="red">Red</option>
@@ -49,7 +58,7 @@
     </div>
 
     <div id="divgender">
-      <p>Gender</p>
+      <p>What gender</p>
       <select id="gender" onchange="savegender();">
         <option id="select" value="select">Select</option>
         <option id="female" value="female">Female</option>
@@ -118,7 +127,7 @@
 
     <button onclick="nextphase();" class="nav-button">Next</button><br><br><br><br>
 
-    <div >
+    <div id="options">
       <img id="top1" height="200px" width="200px">
       <img id="top2" height="200px" width="200px">
       <img id="top3" height="200px" width="200px">
@@ -128,7 +137,307 @@
       <img id="bottom2" height="200px" width="200px">
       <img id="bottom3" height="200px" width="200px">
     </div>
+    <form action="/action_page.php" class="form">
 
+      <h5>Subsrcibe to our Newsletter!</h5>
+      <input type="text" name="fname" class="address">
+      <br>
+      <input type="submit" value="Subsrcibe" class="submit">
+    </form>
+
+
+
+
+        <div class="footer">
+          <div class="bottom-section-1">
+            <h4 style="color: #dfdfdf">
+              Fashion Designer
+            </h4>
+            <br>
+            <h4>
+              20488 Stevens Creek Blvd
+            </h4>
+            <br>
+            <h4>
+              Cupertino, CA
+            </h4>
+            <br>
+            <a href="mailto:jack145945@gmail.com">
+              Get in Touch
+            </a>
+          </div>
+          <div class="bottom-section-2">
+            <img src="12345.png" alt="Logo" height="150px" width="180px">
+          </div>
+          <div class="bottom-section-3">
+            <h4>Contact information:
+              <a href="mailto:jack145945@gmail.com">
+                jack145945@gmail.com
+              </a>
+            </h4>
+              <br>
+            <h4>
+              2019 Copyright: Fashion Designer
+            </h4>
+              <br>
+            <h4>
+              (123) 456-7890
+            </h4>
+            <br>
+            <a href="www.loser.com">
+              Don't press this
+            </a>
+          </div>
+        </div>
+      </footer>
   </body>
-  <script src="lahproject.js"></script>
+
+  <script>
+
+  var divcolor = document.getElementById("divcolor");
+  var divgender = document.getElementById("divgender");
+  var divfemaletype = document.getElementById("divfemaletype");
+  var divmaletype = document.getElementById("divmaletype");
+  var divfemaletops = document.getElementById("divfemaletops");
+  var divfemalebottoms = document.getElementById("divfemalebottoms");
+  var divmaletops = document.getElementById("divmaletops");
+  var divmalebottoms = document.getElementById("divmalebottoms");
+
+  var savedcolor;
+  var savedgender;
+  var savedfemaletype;
+  var savedmaletype;
+  var savedfemaletops;
+  var savedfemalebottoms;
+  var savedmaletops;
+  var savedmalebottoms;
+
+  var one;
+  var two;
+  var three;
+  var four;
+
+  divcolor.style.display = "block";
+  divgender.style.display = "none";
+  divfemaletype.style.display = "none";
+  divmaletype.style.display = "none";
+  divfemaletops.style.display = "none";
+  divfemalebottoms.style.display = "none";
+  divmaletops.style.display = "none";
+  divmalebottoms.style.display = "none";
+
+  var color = document.getElementById("color");
+  function savecolor()
+  {
+    savedcolor = color.options[color.selectedIndex].value;
+    one = savedcolor;
+    console.log(one);
+  }
+
+  var gender = document.getElementById("gender");
+  function savegender()
+  {
+    savedgender = gender.options[gender.selectedIndex].value;
+    // console.log(savedgender);
+  }
+
+  var femaletype = document.getElementById("femaletype");
+  function savefemaletype()
+  {
+    savedfemaletype = femaletype.options[femaletype.selectedIndex].value;
+    // console.log(savedfemaletype);
+  }
+
+  var maletype = document.getElementById("maletype");
+  function savemaletype()
+  {
+    savedmaletype = maletype.options[maletype.selectedIndex].value;
+    // console.log(savedmaletype);
+  }
+
+  var femaletops = document.getElementById("femaletops");
+  function savefemaletops()
+  {
+    savedfemaletops = femaletops.options[femaletops.selectedIndex].value;
+    // console.log(savedfemaletops);
+  }
+
+  var femalebottoms = document.getElementById("femalebottoms");
+  function savefemalebottoms()
+  {
+    savedfemalebottoms = femalebottoms.options[femalebottoms.selectedIndex].value;
+    // console.log(savedfemalebottoms);
+  }
+  var maletops = document.getElementById("maletops");
+  function savemaletops()
+  {
+    savedmaletops = maletops.options[maletops.selectedIndex].value;
+    // console.log(savedmaletops);
+  }
+
+  var malebottoms = document.getElementById("malebottoms");
+  function savemalebottoms()
+  {
+    savedmalebottoms = malebottoms.options[malebottoms.selectedIndex].value;
+    // console.log(savedmalebottoms);
+  }
+
+  var waw=0;
+  function nextphase()
+  {
+    waw++;
+    console.log(waw);
+    monitor();
+    picture();
+  }
+
+  function monitor()
+  {
+
+  if (waw == 0)
+  {
+    divcolor.style.display = "block";
+  }
+      else if (waw == 1)
+      {
+        divgender.style.display = "block";
+        divcolor.style.display = "none";
+      }
+          else if (waw == 2 && savedgender == "female")
+          {
+            divfemaletype.style.display = "block";
+            divgender.style.display = "none";
+            two = "female";
+          }
+              else if (waw == 3 && savedfemaletype == "top")
+              {
+                divfemaletype.style.display = "none";
+                divfemaletops.style.display="block";
+                three = "top";
+              }
+                  else if (savedfemaletops == "tshirt")
+                  {
+                    four = "tshirt";
+                  }
+                  else if (savedfemaletops == "fullsleeve")
+                  {
+                    four = "fullsleeve";
+                  }
+                  else if (savedfemaletops == "tanktop")
+                  {
+                    four = "tanktop";
+                  }
+                  else if (savedfemaletops == "hoodie")
+                  {
+                    four = "hoodie";
+                  }
+
+              else if (waw == 3 && savedfemaletype == "bottom")
+              {
+                divfemaletype.style.display = "none";
+                divfemalebottoms.style.display="block"
+                three = "bottom";
+              }
+                  else if (savedfemalebottoms == "jeans")
+                  {
+                      four = "jeans";
+                  }
+                  else if (savedfemalebottoms == "leggings")
+                  {
+                      four = "leggings";
+                  }
+                  else if (savedfemalebottoms == "skirt")
+                  {
+                      four = "skirt";
+                  }
+
+          else if (waw == 2 && savedgender == "male")
+          {
+            divmaletype.style.display = "block";
+            divgender.style.display = "none";
+            two = "male";
+          }
+              else if (waw == 3 && savedmaletype == "top")
+              {
+                divmaletype.style.display = "none";
+                divmaletops.style.display = "block";
+                three = "top";
+              }
+                  else if (savedmaletops == "tshirt")
+                  {
+                      four = "tshirt";
+                  }
+                  else if (savedmaletops == "fullsleeve")
+                  {
+                    four = "fullsleeve";
+                  }
+                  else if (savedmaletops == "hoodie")
+                  {
+                    four = "hoodie";
+                  }
+
+              else if (waw == 3 && savedmaletype == "bottom")
+              {
+                divmaletype.style.display = "none";
+                divmalebottoms.style.display = "block";
+                three = "bottom";
+              }
+                  else if (savedmalebottoms == "jeans")
+                  {
+                      four = "jeans";
+                  }
+                  else if (savedmalebottoms == "sweatpants")
+                  {
+                      four = "sweatpants";
+                  }
+                  else if (savedmalebottoms == "shorts")
+                  {
+                      four = "shorts";
+                  }
+
+                  console.log(one+", "+two+", "+three+", "+four);
+
+
+  }
+  var options = document.getElementById("options")
+  var x;
+  var next;
+  function picture()
+  {
+
+    if (waw==4 && three == "top")
+    {
+      options.style.visibility = "visible";
+        for (var i=1; i<=3; i++)
+        {
+            document.getElementById("top" + i).src=one+two+three+four+".webp";
+        }
+
+        for (var k=0; k<=2; k++)
+        {
+            var bottom = document.getElementById("bottom"+k)
+            x = Math.floor(Math.random()*5)+1;
+            bottom.src = two+"bottom"+x+".webp";
+        }
+
+    }
+      else if (waw==4 && three == "bottom")
+      {
+          for (var i=1; i<=3; i++)
+          {
+              document.getElementById("bottom" + i).src=one+two+three+four+".webp";
+          }
+
+          for (var k=0; k<=2; k++)
+          {
+              var top = document.getElementById("top"+k)
+                x = Math.floor(Math.random()*5)+1;
+              top.src = two+"top"+x+".webp";
+          }
+      }
+
+  }
+
+
+  </script>
 </html>

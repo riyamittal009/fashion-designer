@@ -69,6 +69,20 @@ h2 {
   padding-bottom: 20px;
 }
 
+h5 {
+  font-size: 60px;
+  font-family: 'Oxygen', sans-serif;
+  color: #39CCCC;
+  font-style:normal;
+  font-variant: normal;
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+
 /* Meet the Team */
 
 h3 {
@@ -223,7 +237,7 @@ a {
 
 .body {
   background-color: #dddddd;
-  height: 1800px;
+  height: 2000px;
   padding: 40px;
 
 }
@@ -242,23 +256,84 @@ a {
 }
 .address {
   outline: none;
-  border-style: dotted;
-  border-color: blue;
-  background: #aaffff;
-  color: red;
-  width: 500px;
-  margin-top: 10px;
+  border-color: #cfcfcf;
+  background: #ffffff;
+  color: black;
+  width: 520px;
+  height: 44px;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family:'Oxygen', sans-serif;
 }
 .form {
   text-align: center;
   padding: 10px;
 }
 .submit {
-  margin-top: 5px;
-  background: blue;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background: #3D9990;
   color: white;
   border-style: none;
-  border-radius: 10px;
+  border-radius: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 24px;
+  font-family:'Oxygen', sans-serif;
 }
+
+.Newsletters {
+background-color: grey;
+max-height: 4000px;
+}
+
+.announcement {
+  background: white;
+}
+
+.move {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	animation-name: marquee;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-style: italic;
+}
+
+#top1 {
+	visibility: hidden;
+}
+#top2 {
+	visibility: hidden;
+}
+#top3 {
+	visibility: hidden;
+}
+#bottom1 {
+	visibility: hidden;
+}
+#bottom2 {
+	visibility: hidden;
+}
+#bottom3 {
+	visibility: hidden;
+}
+.merge {
+	width: 285px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.words {
+  font-size: 24px;
+  width: 480px;
+  color: black;
+  font-family:'Oxygen', sans-serif;
+}
+
+@keyframes marquee {
+	0% {left: 100%;}
+	100% {left: -100%;}
