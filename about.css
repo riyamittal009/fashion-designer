@@ -93,7 +93,7 @@ html {
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
 		font-family: 'Pacifico', cursive;
-		padding-top: 40px;
+		padding-top: 60px;
 		padding-bottom: 40px;
 	}
 	@keyframes title {
@@ -130,7 +130,7 @@ h2 {
 }
 
 h5 {
-  font-size: 60px;
+  font-size: 85px;
   font-family: 'Pacifico', cursive;
   color: #A4D7FF;
   font-style:normal;
