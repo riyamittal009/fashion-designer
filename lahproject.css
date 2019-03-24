@@ -3,7 +3,7 @@ html {
 	background-attachment: fixed;
   text-align: center;
 	overflow-x: hidden;
-	font-family: 'Libre Baskerville', serif;
+	font-family: "Times New Roman", sans-serif;
 }
 select {
 	background: #fff7c0;
@@ -50,7 +50,7 @@ a {
 	100% {color: #6F0CE8;}
 }
 .announcement {
-	background: blue;
+	background: white;
 }
 .words {
 	font-size: 20px;
