@@ -139,3 +139,5 @@ if (waw == 0)
               divmalebottoms.style.display = "block";
             }
 }
+}
+  
