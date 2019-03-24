@@ -157,6 +157,7 @@ h3 {
   margin-right: 20px;
   margin-bottom: 10px;
   text-align: center;
+  padding-top: 30px;
 }
 
 h4 {
@@ -349,9 +350,7 @@ background-color: grey;
 max-height: 4000px;
 }
 
-.announcement {
-  background: white;
-}
+
 
 .move {
 	margin-left: auto;
