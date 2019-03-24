@@ -45,7 +45,12 @@ border-spacing: 0;
 html {
   text-align: center;
   overflow-x: hidden;
-  font-family: 'Oxygen', sans-serif;}
+  font-family: 'Oxygen', sans-serif;
+  background: url("secondbg.png");
+  background-attachment: fixed;
+
+}
+
 
   select {
     background: #fff7c0;
