@@ -21,6 +21,7 @@ divmalebottoms.style.display = "none";
 function nextphase()
 {
   waw++;
+  console.log(waw);
 }
 
 if (waw == 0)
