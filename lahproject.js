@@ -17,6 +17,11 @@ var savedfemalebottoms;
 var savedmaletops;
 var savedmalebottoms;
 
+var one;
+var two;
+var three;
+var four;
+
 divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
@@ -140,4 +145,3 @@ if (waw == 0)
             }
 }
 }
-  
