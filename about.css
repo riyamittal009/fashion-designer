@@ -49,7 +49,7 @@ html {
   background: url("secondbg.png");
   background-attachment: fixed;
 	animation-name: fade;
-	animation-duration: 0.8s;
+	animation-duration: 2s;
 }
 @keyframes fade {
 	0% {opacity: 0}
