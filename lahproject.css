@@ -1,66 +1,66 @@
-html {
-	background: url("https://i.imgur.com/52D2Mv8.png");
-	background-attachment: fixed;
-  text-align: center;
-	overflow-x: hidden;
-	font-family: 'Pacifico', cursive;
+	html {
+		background: url("https://i.imgur.com/52D2Mv8.png");
+		background-attachment: fixed;
+	  text-align: center;
+		overflow-x: hidden;
+		font-family: 'Pacifico', cursive;
 
-}
-select {
-	background: #fff7c0;
-	border-radius: 4px;
-	border-color: white;
-}
-button {
-	border-style: none;
-	border-radius: 50px;
-	font-size: 20px;
-	padding: 10px 40px;
-	color: white;
-	animation-name: button;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	margin-top: 30px;
-	cursor: pointer;
-	outline: none;
-}
-a {
-	text-decoration: none;
-	color: white;
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-bottom: 100px;
-}
-@keyframes button {
-	0% {background: #2D00FF;}
-	50% {background: #6F0CE8;}
-	100% {background: #2D00FF;}
-}
-.title {
-	font-size: 4em;
-	margin-top: 100px;
-	/*font-weight: bold;
-	font-style: italic; */
-	animation-name: title;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	font-family: 'Pacifico', cursive;
-	background: white;
-	padding-top: 10px;
-	padding-bottom: 30px;
-}
-@keyframes title {
-	0% {color: #6F0CE8;}
-	50% {color: #2D00FF;}
-	100% {color: #6F0CE8;}
-}
-.announcement {
-	background: white;
-}
-.words {
-	font-size: 20px;
-	width: 450px;
-	color: red;
+	}
+	select {
+		background: #fff7c0;
+		border-radius: 4px;
+		border-color: white;
+	}
+	button {
+		border-style: none;
+		border-radius: 50px;
+		font-size: 20px;
+		padding: 10px 40px;
+		color: white;
+		animation-name: button;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		margin-top: 30px;
+		cursor: pointer;
+		outline: none;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 100px;
+	}
+	@keyframes button {
+		0% {background: #2D00FF;}
+		50% {background: #6F0CE8;}
+		100% {background: #2D00FF;}
+	}
+	.title {
+		font-size: 4em;
+		margin-top: 100px;
+		/*font-weight: bold;
+		font-style: italic; */
+		animation-name: title;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		font-family: 'Pacifico', cursive;
+		background: white;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@keyframes title {
+		0% {color: #6F0CE8;}
+		50% {color: #2D00FF;}
+		100% {color: #6F0CE8;}
+	}
+	.announcement {
+		background: white;
+	}
+	.words {
+		font-size: 20px;
+		width: 450px;
+		color: red;
 }
 .move {
 	margin-left: auto;
