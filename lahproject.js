@@ -214,5 +214,5 @@ if (waw == 0)
 
 function picture()
 {
-handleimage.src=one+two+three+four + ".jpg";
+handleimage.src="campaign.jpg";
 }
