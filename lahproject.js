@@ -22,11 +22,10 @@ var two;
 var three;
 var four;
 
-var handleimage = document.getElementById("testrun");
-
 function picture()
 {
-  handleimage.src="campaign.jpg";
+  document.getElementById("testrun").src="campaign.jpg";
+
 }
 
 divcolor.style.display = "block";
