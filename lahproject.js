@@ -212,8 +212,8 @@ function picture()
 
   if (waw==4){
       for (var j=1; j<=3; j++){
-        var topx = document.getElementById("top"+k)
-        var bottomx = document.getElementById("bottom"+k)
+        var topx = document.getElementById("top"+j)
+        var bottomx = document.getElementById("bottom"+j)
         topx.style.visibility = "visible";
         bottom.style.visibility = "visible";
         }
