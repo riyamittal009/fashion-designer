@@ -51,7 +51,7 @@ html {
 
 h1 {
   font-size: 128px;
-  font-family: 'Baloo Chettan', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #696969;
   font-style: normal;
   font-variant: normal;
@@ -67,7 +67,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #696969;
   font-style:normal;
   font-variant: normal;
@@ -79,7 +79,7 @@ h2 {
 
 h5 {
   font-size: 60px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: Blue;
   font-style:normal;
   font-variant: normal;
@@ -95,7 +95,7 @@ h5 {
 
 h3 {
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #000000;
   font-style:normal;
   font-variant: normal;
@@ -109,7 +109,7 @@ h3 {
 
 h4 {
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #afafaf;
   font-style:normal;
   font-variant: normal;
@@ -119,7 +119,7 @@ h4 {
 
 p{
   font-size: 20px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: Blue;
   font-style:normal;
   font-variant: normal;
@@ -228,7 +228,7 @@ footer {
   padding: 14px 14px;
   float: left;
   color: white;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   margin-right: 0px;
   font-size: 24px;
 }
@@ -240,7 +240,7 @@ footer {
 
 a {
   color: #ffffff;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 .body {
@@ -272,7 +272,7 @@ a {
   font-size: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family:'Oxygen', sans-serif;
+  font-family:'Pacifico', cursive;
 }
 .form {
   text-align: center;
@@ -288,7 +288,7 @@ a {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 24px;
-  font-family:'Oxygen', sans-serif;
+  font-family:'Pacifico', cursive;
 }
 
 .Newsletters {
@@ -330,7 +330,7 @@ max-height: 4000px;
 }
 .merge {
 	width: 285px;
-	height: 30px;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -339,7 +339,7 @@ max-height: 4000px;
   font-size: 24px;
   width: 480px;
   color: black;
-  font-family:'Oxygen', sans-serif;
+  font-family:'Pacifico', cursive;
 }
 
 @keyframes marquee {
