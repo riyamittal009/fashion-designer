@@ -22,8 +22,6 @@ var two;
 var three;
 var four;
 
-varfemaletops = [femaletop1, femaletop2, femaletop3, femaletop4, femaletop5]
-
 divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
