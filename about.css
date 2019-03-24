@@ -90,7 +90,6 @@ html {
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
 		font-family: 'Oxygen', sans-serif;
-		background: white;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
@@ -124,7 +123,6 @@ h2 {
   font-variant: normal;
   text-align: center;
   display: block;
-  background-color: #ffffff;
   padding-bottom: 20px;
 }
 
@@ -136,7 +134,6 @@ h5 {
   font-variant: normal;
   text-align: center;
   display: block;
-  background-color: #ffffff;
   margin-bottom: 20px;
   margin-top: 20px;
 }
