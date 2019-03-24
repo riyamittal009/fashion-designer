@@ -1,314 +1,348 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="about.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <title>About Us</title>
-  </head>
-  <body>
-    <div class="announcement">
-        <div class="move">
-            <p class="words">Announcement: Welcome to our new site!</p>
-        </div>
-    </div>
-    <header>
-      <div class="nav-color">
-      <ul class="nav-bar">
-        <li class="nav-item-2">
-          Fashion Designer
-        </li>
-        <a href="contact.html">
-          <li class="nav-item">
-            Contact Us
-          </li>
-        </a>
-
-      <a href="about.html">
-        <li class="nav-item">
-              <u>
-                About Us
-              </u>
-        </li>
-      </a>
-
-      <a href="lahproj.html">
-        <li class="nav-item">
-          Home
-        </li>
-      </a>
-      </ul>
-    </div>
-    </header>
-
-
-
-
-
-
-
-      <div class="center-text">
-
-        <h1>
-          About
-          <span style="color: #3D9990;">
-            Us
-          </span>
-        </h1>
-
-
-
-
-
-
-
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="12345.png" style="width:100%" >
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="12345.png" style="width:100%">
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="12345.png" style="width:100%">
-            <div class="text"></div>
-          </div>
-        </div>
-        <br>
-
-
-
-
-<style media="screen">
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-max-width: 1400px;
-position: relative;
-margin: auto;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
 }
 
-/* Hide the images by default */
-.mySlides {
-display: none;
+html {
+  background: url("https://i.imgur.com/52D2Mv8.png");
+  background-attachment: fixed;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: 'Pacifico', cursive;}
+
+h1 {
+  font-size: 128px;
+  font-family: 'Baloo Chettan', sans-serif;
+  color: #696969;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+
+
 }
 
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+/* About Us */
+
+h2 {
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  color: #696969;
+  font-style:normal;
+  font-variant: normal;
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  padding-bottom: 20px;
 }
 
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
+h5 {
+  font-size: 60px;
+  font-family: 'Oxygen', sans-serif;
+  color: #39CCCC;
+  font-style:normal;
+  font-variant: normal;
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 200px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+
+/* Meet the Team */
+
+h3 {
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  color: #000000;
+  font-style:normal;
+  font-variant: normal;
+  spacing: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* Caption text */
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
+h4 {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  color: #afafaf;
+  font-style:normal;
+  font-variant: normal;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
+/* The Name */
+
+p{
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+  color: #39CCCC;
+  font-style:normal;
+  font-variant: normal;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+/* About that Person */
+
+header {
+  display: block;
+  color: #105916;
+  margin: auto;
 }
 
-.active, .dot:hover {
-background-color: #717171;
+footer {
+  display:block;
+  color: #105916;
+  margin: auto;
 }
 
-/* Fading animation */
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
+.footer{
+  background-color: #3e3c36;
+  display: block;
+  height: 200px;
+  list-style-type: none;
+  overflow: hidden;
+  clear: both;
 }
 
-@-webkit-keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+.bottom-section-1 {
+  display: inline-block;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 200px
 }
 
-@keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+
+.bottom-section-2 {
+  display: inline-block;
+  float: none;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 40px;
+
 }
-</style>
+.bottom-section-3 {
+  display: inline-block;
+  float: right;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 200px;
 
-<script type="text/javascript">
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
 }
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}
-slides[slideIndex-1].style.display = "block";
-setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+
+
+.left-text {
+  text-align: left;
 }
-</script>
 
+.center-text {
+  text-align: center;
 
+}
 
+.right-text {
+  text-align: right;
 
-      </div>
+}
 
-      <div class="center-text">
-        <h2>
-          Meet the Team
-        </h2>
-      </div>
+.nav-bar {
+  height: auto;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3D9970;
+  display: block;
+}
 
-      <div class="wrap">
-       <div class="more" style="margin-right: 20px; margin-bottom: 20px;">
-          <h3>Jack Luo</h3>
-         <br>
-          <p>Heyo, I am Jack, one of the legends on the century, coded for three years, have half a year of experience, but it doesn’t matter, I made the design, about us page, and contact page, well with the help of Jimmy. Anyways, I learned some CSS, HTMl, and Javascript during the summers. And I love to play games, so much I played games half of the hackathon. Clash Royale is great game, see you in Champion Area, oh, email me at jack145945@gmail.com</p>
-       </div>
-       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-left: 20px; margin-bottom: 20px;">
-      </div>
-      <br>
-      <div class="wrap">
-       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
-       <div class="more" style="margin-left: 20px; margin-top: 20px; margin-bottom: 20px;">
-          <h3>Jimmy Pan</h3>
-         <br>
-          <p>Hi! My name is Jimmy Pan, and I have been coding for less then a year. I am currently taking Web Page Design where I learn html and css. Even though I have not been coding for very long, I am still pretty good at html and css. Other things about me is that I like to play games. I especially like to play Minecraft with my friends. If you are curious about what I play on Minecraft, I mainly play Bedwars on the Hypixel Network. See you around! (=｀ω´=)
-</p>
-       </div>
-      </div>
-      <br>
-      <div class="wrap">
-       <div class="more" style="margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
-          <h3>Anika Ahora</h3>
-         <br>
-          <p>Hi! My name is Anika Arora and I’ve been coding for about three years. Through those years, I’ve learned HTM, CSS, JavaScript, and some Python. I love to code but I also like I love to play sports like basketball and tennis in my free time.
-</p>
-       </div>
-       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-left: 20px; margin-top: 20px; margin-bottom: 20px;">
-      </div>
-      <br>
-      <div class="wrap">
-       <img src="12345.png" alt="Logo" height="400px" width="480px" class="left" style="margin-right: 20px; margin-top: 20px;">
-       <div class="more" style="margin-left: 20px; margin-top: 20px;">
-          <h3>Riya Mittal</h3>
-         <br>
-          <p>Hi! My name is Riya Mittal and I’ve been coding on-and-off for about three years. Most of my experience is in web development: HTML, CSS, JS, and Python. I love coding because it’s so challenging and fun at the same time; it really allows me to think outside of the box and I hope to do it for a long time :)
-</p>
-       </div>
-      </div>
-      <br>
-<hr>
+.nav-item {
+  background-color: #3D9970;
+  margin: 0px;
+  padding: 14px 14px;
+  float: right;
+  font-size: 24px;
+}
 
-  <form action="/action_page.php" class="form">
+.nav-item:hover {
+  background-color: #3D9990;
+  margin: 0px;
+  padding: 14px 14px;
+  float: right;
+  font-size: 24px;
+}
 
-    <h5>Subsrcibe to our Newsletter!</h5>
-    <input type="text" name="fname" class="address">
-    <br>
-    <input type="submit" value="Subsrcibe" class="submit">
-  </form>
+.nav-item-2 {
+  background-color: #3D9970;
+  margin: 0px;
+  padding: 14px 14px;
+  float: left;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  margin-right: 0px;
+  font-size: 24px;
+}
 
+.about-people {
+  background-color: Yellow;
 
+}
 
+a {
+  color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+}
 
-      <div class="footer">
-        <div class="bottom-section-1">
-          <h4 style="color: #dfdfdf">
-            Fashion Designer
-          </h4>
-          <br>
-          <h4>
-            20488 Stevens Creek Blvd
-          </h4>
-          <br>
-          <h4>
-            Cupertino, CA
-          </h4>
-          <br>
-          <a href="mailto:jack145945@gmail.com">
-            Get in Touch
-          </a>
-        </div>
-        <div class="bottom-section-2">
-          <img src="12345.png" alt="Logo" height="150px" width="180px">
-        </div>
-        <div class="bottom-section-3">
-          <h4>Contact information:
-            <a href="mailto:jack145945@gmail.com">
-              jack145945@gmail.com
-            </a>
-          </h4>
-            <br>
-          <h4>
-            2019 Copyright: Fashion Designer
-          </h4>
-            <br>
-          <h4>
-            (123) 456-7890
-          </h4>
-          <br>
-          <a href="www.loser.com">
-            Don't press this
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+.body {
+  background-color: #dddddd;
+  height: 2000px;
+  padding: 40px;
+
+}
+.more {
+  width: 480px;
+  height: 400px;
+  float: left;
+}
+.wrap {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  float: left;
+}
+.address {
+  outline: none;
+  border-color: #cfcfcf;
+  background: #ffffff;
+  color: black;
+  width: 520px;
+  height: 44px;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family:'Oxygen', sans-serif;
+}
+.form {
+  text-align: center;
+  padding: 10px;
+}
+.submit {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background: #3D9990;
+  color: white;
+  border-style: none;
+  border-radius: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family:'Oxygen', sans-serif;
+}
+
+.Newsletters {
+background-color: grey;
+max-height: 4000px;
+}
+
+.announcement {
+  background: white;
+}
+
+.move {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	animation-name: marquee;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-style: italic;
+}
+
+#top1 {
+	visibility: hidden;
+}
+#top2 {
+	visibility: hidden;
+}
+#top3 {
+	visibility: hidden;
+}
+#bottom1 {
+	visibility: hidden;
+}
+#bottom2 {
+	visibility: hidden;
+}
+#bottom3 {
+	visibility: hidden;
+}
+.merge {
+	width: 285px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.words {
+  font-size: 24px;
+  width: 480px;
+  color: black;
+  font-family:'Oxygen', sans-serif;
+}
+
+@keyframes marquee {
+	0% {left: 100%;}
+	100% {left: -100%;}
+about

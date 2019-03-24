@@ -41,6 +41,14 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+
+html {
+  background: url("https://i.imgur.com/52D2Mv8.png");
+  background-attachment: fixed;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: 'Pacifico', cursive;}
+
 h1 {
   font-size: 128px;
   font-family: 'Baloo Chettan', sans-serif;
@@ -72,7 +80,7 @@ h2 {
 h5 {
   font-size: 60px;
   font-family: 'Oxygen', sans-serif;
-  color: #39CCCC;
+  color: Blue;
   font-style:normal;
   font-variant: normal;
   text-align: center;
@@ -112,7 +120,7 @@ h4 {
 p{
   font-size: 20px;
   font-family: 'Oxygen', sans-serif;
-  color: #39CCCC;
+  color: Blue;
   font-style:normal;
   font-variant: normal;
   line-height: 30px;
@@ -194,12 +202,12 @@ footer {
   height: auto;
   list-style-type: none;
   overflow: hidden;
-  background-color: #3D9970;
+  background-color: Blue;
   display: block;
 }
 
 .nav-item {
-  background-color: #3D9970;
+  background-color: Blue;
   margin: 0px;
   padding: 14px 14px;
   float: right;
@@ -215,7 +223,7 @@ footer {
 }
 
 .nav-item-2 {
-  background-color: #3D9970;
+  background-color: Blue;
   margin: 0px;
   padding: 14px 14px;
   float: left;
@@ -337,3 +345,4 @@ max-height: 4000px;
 @keyframes marquee {
 	0% {left: 100%;}
 	100% {left: -100%;}
+#102f60#102f60#102f60#102f60
