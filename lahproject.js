@@ -204,12 +204,9 @@ if (waw == 0)
                 {
                     four = "shorts";
                 }
-                return one;
-                return two;
-                return three;
-                return four;
+
                 console.log(one+", "+two+", "+three+", "+four);
 
-                picture();
-
 }
+
+picture();
