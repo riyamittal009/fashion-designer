@@ -207,9 +207,19 @@ if (waw == 0)
 
 function picture()
 {
-  if (waw==4)
-  {  document.getElementById("testrun").src=one+two+three+four+".webp";
+  if (waw==4 && three = "top")
+  {
+      for (var i=1, i<=3, i++)
+      {
+          document.getElementById("top" + i).src=one+two+three+four+".webp";
+      }
   }
-    else {}
+    else if (waw==4 && three = "bottom")
+    {
+        for (var i=1, i<=3, i++)
+        {
+            document.getElementById("bottom" + i).src=one+two+three+four+".webp";
+        }
+    }   
 
 }

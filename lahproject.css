@@ -60,7 +60,7 @@
 	.words {
 		font-size: 20px;
 		width: 450px;
-		color: red;
+		color: black;
 }
 .move {
 	margin-left: auto;
@@ -143,7 +143,7 @@ p {
 	font-weight: lighter;
 	font-family: "Comic Sans MS", cursive, sans-serif
 	font-variant: normal;
-	color: orange;
+	color: black;
 
 }
 
