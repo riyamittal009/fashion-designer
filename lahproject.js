@@ -215,7 +215,7 @@ function picture()
         var topx = document.getElementById("top"+j)
         var bottomx = document.getElementById("bottom"+j)
         topx.style.visibility = "visible";
-        bottom.style.visibility = "visible";
+        bottomx.style.visibility = "visible";
         }
   }
   else if (waw==4 && three == "top")
