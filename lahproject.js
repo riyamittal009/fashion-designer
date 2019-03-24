@@ -205,8 +205,7 @@ if (waw == 0)
                     four = "shorts";
                 }
 
-                console.log(one+", "+two+", "+three+", "+four);
 
 }
-
+    console.log(one+", "+two+", "+three+", "+four);
 picture();
