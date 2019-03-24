@@ -93,6 +93,7 @@ function nextphase()
   waw++;
   console.log(waw);
   monitor();
+  picture();
 }
 
 function monitor()
@@ -207,6 +208,3 @@ function picture()
   document.getElementById("testrun").src=one+two+three+four+".jpg";
 
 }
-
-console.log(one+", "+two+", "+three+", "+four);
-picture();
