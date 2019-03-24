@@ -86,7 +86,7 @@ function nextphase()
 
 function monitor()
 {
-  
+
 if (waw == 0)
 {
   divcolor.style.display = "block";
@@ -103,7 +103,7 @@ if (waw == 0)
         }
 }
 
-       var algoliasearch = require('algoliasearch');
+    /*   var algoliasearch = require('algoliasearch');
         // var algoliasearch = require('algoliasearch/reactnative');
         // var algoliasearch = require('algoliasearch/lite');
         // import * as algoliasearch from 'algoliasearch'; // When using TypeScript
@@ -113,4 +113,11 @@ if (waw == 0)
         // but in the AMD modules of the page
 
         var client = algoliasearch('DKG1T96OHW', '166c41803287eebeeaba52a556f58e2a');
-        var index = client.initIndex('your_index_name');
+        var index = client.initIndex('contacts');
+var contactsJSON = require('./contacts.json');
+
+index.addObjects(contactsJSON, function(err, content) {
+  if (err) {
+    console.error(err);
+  }
+}); */
