@@ -18,16 +18,19 @@ divfemalebottoms.style.display = "none";
 divmaletops.style.display = "none";
 divmalebottoms.style.display = "none";
 
+function nextphase()
+{
+  waw++;
+}
+
 if (waw == 0)
 {
   divcolor.style.display = "block";
-  waw++;
 }
     else if (waw == 1)
     {
       divgender.style.display = "block";
       divcolor.style.display = "none";
-      waw++;
     }
         else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
         {
