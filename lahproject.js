@@ -29,7 +29,7 @@ if (waw == 0)
       divcolor.style.display = "none";
       waw++;
     }
-        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex")
+        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
         {
           divfemaletype.style.display == "block";
           divgender.style.display == "none";
