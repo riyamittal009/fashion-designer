@@ -127,7 +127,7 @@ h2 {
   text-align: center;
   display: block;
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 h5 {
@@ -166,7 +166,8 @@ h4 {
   color: #afafaf;
   font-style:normal;
   font-variant: normal;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 /* The Name */
