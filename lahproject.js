@@ -1,4 +1,3 @@
-var waw=0;
 var prev;
 var curr;
 
@@ -20,27 +19,6 @@ divfemalebottoms.style.display = "none";
 divmaletops.style.display = "none";
 divmalebottoms.style.display = "none";
 
-function nextphase()
-{
-  waw++;
-  console.log(waw);
-
-
-if (waw == 0)
-{
-  divcolor.style.display = "block";
-}
-    else if (waw == 1)
-    {
-      divgender.style.display = "block";
-      divcolor.style.display = "none";
-    }
-        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
-        {
-          divfemaletype.style.display == "block";
-          divgender.style.display == "none";
-        }
-}
 
 var color = document.getElementById("color");
 function savecolor()
@@ -98,7 +76,36 @@ function savemalebottoms()
   console.log(savedmalebottoms);
 }
 
-/*{
-  var "saved"+info = info.options[info.selectedIndex].value;
-  console.log("saved"+info);
-}*/
+var waw=0;
+function nextphase()
+{
+  waw++;
+  console.log(waw);
+}
+
+if (waw == 0)
+{
+  divcolor.style.display = "block";
+}
+    else if (waw == 1)
+    {
+      divgender.style.display = "block";
+      divcolor.style.display = "none";
+    }
+        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex"))
+        {
+          divfemaletype.style.display == "block";
+          divgender.style.display == "none";
+        }
+
+       var algoliasearch = require('algoliasearch');
+        // var algoliasearch = require('algoliasearch/reactnative');
+        // var algoliasearch = require('algoliasearch/lite');
+        // import * as algoliasearch from 'algoliasearch'; // When using TypeScript
+
+        // or just use algoliasearch if you are using a <script> tag
+        // if you are using AMD module loader, algoliasearch will not be defined in window,
+        // but in the AMD modules of the page
+
+        var client = algoliasearch('DKG1T96OHW', '166c41803287eebeeaba52a556f58e2a');
+        var index = client.initIndex('your_index_name');
