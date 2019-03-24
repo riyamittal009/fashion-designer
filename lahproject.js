@@ -22,12 +22,6 @@ var two;
 var three;
 var four;
 
-function picture()
-{
-  document.getElementById("testrun").src=one+two+three+four+".webp";
-
-}
-
 divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
@@ -207,5 +201,12 @@ if (waw == 0)
 
 
 }
-    console.log(one+", "+two+", "+three+", "+four);
+
+function picture()
+{
+  document.getElementById("testrun").src=one+two+three+four+".webp";
+
+}
+
+console.log(one+", "+two+", "+three+", "+four);
 picture();
