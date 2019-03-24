@@ -206,7 +206,7 @@ if (waw == 0)
                 }
 
                 if (waw==5){
-                picture();
+                picture();}
 }
 
 function picture()
