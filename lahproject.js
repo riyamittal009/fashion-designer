@@ -127,7 +127,8 @@ if (waw == 0)
                 {
                   four = "tshirt";
                   console.log(four);
-                  console.log(one+", "+ two+", "+  three+", "+four);
+                  console.log("campaign.jpg");
+                  picture();
                 }
                 else if (savedfemaletops == "fullsleeve")
                 {
@@ -208,8 +209,6 @@ if (waw == 0)
                 {
                     four = "shorts";
                 }
-
-                picture();
 }
 
 
