@@ -1,5 +1,5 @@
 html {
-	/*background: url("https://i.imgur.com/52D2Mv8.png");*/
+	background: url("https://i.imgur.com/52D2Mv8.png");
 	background-attachment: fixed;
   text-align: center;
 	overflow-x: hidden;
@@ -182,4 +182,8 @@ ul, menu, dir {
   font-family: "Open Sans";
   font-size: 36px;
   text-align: center;
+}
+
+#testrun {
+	z-index: 100;
 }
