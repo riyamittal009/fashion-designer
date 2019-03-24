@@ -49,6 +49,52 @@ html {
   overflow-x: hidden;
   font-family: 'Pacifico', cursive;}
 
+  select {
+    background: #fff7c0;
+    border-radius: 4px;
+    border-color: white;
+    font-family: 'Pacifico', cursive;
+  }
+
+  button {
+		border-style: none;
+		border-radius: 50px;
+		font-size: 20px;
+		padding: 10px 40px;
+		color: white;
+		animation-name: button;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		margin-top: 30px;
+		cursor: pointer;
+		outline: none;
+		font-family: 'Pacifico', cursive;
+	}
+  @keyframes button {
+    0% {background: #2D00FF;}
+    50% {background: #6F0CE8;}
+    100% {background: #2D00FF;}
+  }
+
+  .title {
+		font-size: 4em;
+		margin-top: 100px;
+		/*font-weight: bold;
+		font-style: italic; */
+		animation-name: title;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		font-family: 'Pacifico', cursive;
+		background: white;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@keyframes title {
+		0% {color: #6F0CE8;}
+		50% {color: #2D00FF;}
+		100% {color: #6F0CE8;}
+	}
+
 h1 {
   font-size: 128px;
   font-family: 'Pacifico', cursive;
@@ -345,5 +391,3 @@ max-height: 4000px;
 @keyframes marquee {
 	0% {left: 100%;}
 	100% {left: -100%;}
-font-family: 'Pacifico', cursive;font-family: 'Pacifico', cursive;font-family: 'Pacifico', cursive;font-family: 'Pacifico', cursive;font-family: 'Pacifico', cursive;font-family: 'Pacifico', cursive;#102f60#102f60#102f60#102f60
-font-family: 'Pacifico', cursive;
