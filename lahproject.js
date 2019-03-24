@@ -21,6 +21,9 @@ var savedfemaletops;
 var savedfemalebottoms;
 var savedmaletops;
 var savedmalebottoms;
+var savedunisextops;
+var savedunisextype;
+var saveunisexbottoms;
 
 divcolor.style.display = "block";
 divgender.style.display = "none";
@@ -131,7 +134,7 @@ if (waw == 0)
       divgender.style.display = "block";
       divcolor.style.display = "none";
     }
-        else if (waw == 2 && savedgender == "female"))
+        else if (waw == 2 && savedgender == "female")
         {
           divfemaletype.style.display = "block";
           divgender.style.display = "none";
@@ -152,27 +155,23 @@ if (waw == 0)
             {
             }*/
 
-            else if (waw == 2 && savedgender == "unisex"))
-            {
-              divunisextype.style.display = "block";
-              divgender.style.display = "none";
-            }
-                else if (waw == 3 && savedunisextype == "top")
-                {
-                  divunisextype.style.display = "none";
-                  divunisextops.style.display="block";
-                }
-
-                else if (waw == 3 && savedunisextype == "bottom")
-                {
-                  divunisextype.style.display = "none";
-                  divunisexebottoms.style.display="block"
-                }
-
-        else if (waw == 2 && savedgender == "unisex"){
-          divfemaletype.style.display = "block";
+        else if (waw == 2 && savedgender == "unisex")
+        {
+          divunisextype.style.display = "block";
           divgender.style.display = "none";
         }
+            else if (waw == 3 && savedunisextype == "top")
+            {
+              divunisextype.style.display = "none";
+              divunisextops.style.display="block";
+            }
+
+            else if (waw == 3 && savedunisextype == "bottom")
+            {
+              divunisextype.style.display = "none";
+              divunisexebottoms.style.display="block"
+            }
+
         else if (waw == 2 && savedgender == "male")
         {
           divmaletype.style.display = "block";

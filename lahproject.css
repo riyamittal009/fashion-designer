@@ -1,5 +1,5 @@
 html {
-	background: url("https://i.imgur.com/NYEpsWA.png");
+	background: url("https://i.imgur.com/52D2Mv8.png");
 	background-attachment: fixed;
   text-align: center;
 	overflow-x: hidden;
@@ -56,7 +56,7 @@ a {
 }
 .words {
 	font-size: 20px;
-	width: 380px;
+	width: 450px;
 	color: gold;
 }
 .move {
@@ -123,4 +123,22 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
+}
+
+
+h1 {
+	font-size: 60px;
+	font-style: normal;
+	font-weight: lighter;
+	font-family: cursive;
+	font-variant: normal;
+}
+
+p {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: lighter;
+	font-family: cursive;
+	font-variant: normal;
+
 }
