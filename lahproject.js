@@ -128,7 +128,6 @@ if (waw == 0)
                 else if (savedfemaletops == "tshirt")
                 {
                   four = "tshirt";
-                  picture();
                 }
                 else if (savedfemaletops == "fullsleeve")
                 {
@@ -210,5 +209,7 @@ if (waw == 0)
                 return three;
                 return four;
                 console.log(one+", "+two+", "+three+", "+four);
+
+                picture();
 
 }
