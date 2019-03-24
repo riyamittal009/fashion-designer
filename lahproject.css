@@ -130,15 +130,23 @@ h1 {
 	font-size: 60px;
 	font-style: normal;
 	font-weight: lighter;
-	font-family: cursive;
+	font-family: "Comic Sans MS", cursive, sans-serif
+	font-variant: normal;
+}
+
+h2 {
+	font-size: 48px;
+	font-style: normal;
+	font-weight: lighter;
+	font-family: "Comic Sans MS", cursive, sans-serif
 	font-variant: normal;
 }
 
 p {
-	font-size: 16px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: lighter;
-	font-family: cursive;
+	font-family: "Comic Sans MS", cursive, sans-serif
 	font-variant: normal;
 
 }
