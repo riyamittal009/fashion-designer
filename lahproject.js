@@ -22,6 +22,8 @@ var two;
 var three;
 var four;
 
+varfemaletops = [femaletop1, femaletop2, femaletop3, femaletop4, femaletop5]
+
 divcolor.style.display = "block";
 divgender.style.display = "none";
 divfemaletype.style.display = "none";
@@ -205,6 +207,8 @@ if (waw == 0)
 
 }
 
+var x = Math.floor(Math.random()*5)+1;
+
 function picture()
 {
   if (waw==4 && three == "top")
@@ -213,6 +217,13 @@ function picture()
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
       }
+
+      for (var k=1; k<=3; k++)
+      {
+          var bottom = document.getElementById("bottom"+k)
+          bottom.src = two+"bottom"+x+".webp";
+      }
+
   }
     else if (waw==4 && three == "bottom")
     {
