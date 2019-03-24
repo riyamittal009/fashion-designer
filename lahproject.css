@@ -187,5 +187,20 @@ ul, menu, dir {
   text-align: center;
 }
 #top1 {
-	border-style: none;
+	visibility: hidden;
+}
+#top2 {
+	visibility: hidden;
+}
+#top3 {
+	visibility: hidden;
+}
+#bottom1 {
+	visibility: hidden;
+}
+#bottom2 {
+	visibility: hidden;
+}
+#bottom3 {
+	visibility: hidden;
 }
