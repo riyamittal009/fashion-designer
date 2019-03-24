@@ -45,7 +45,7 @@ border-spacing: 0;
 html {
   text-align: center;
   overflow-x: hidden;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   background: url("secondbg.png");
   background-attachment: fixed;
 
@@ -58,7 +58,7 @@ html {
     height: 30px;
     width: 100px;
     border-color: white;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Pacifico', cursive;
   }
 
   button {
@@ -73,7 +73,7 @@ html {
 		margin-top: 30px;
 		cursor: pointer;
 		outline: none;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Pacifico', cursive;
 	}
   @keyframes button {
     0% {background: #2D00FF;}
@@ -89,7 +89,7 @@ html {
 		animation-name: title;
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'Pacifico', cursive;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
@@ -101,7 +101,7 @@ html {
 
 h1 {
   font-size: 128px;
-  font-family: 'Baloo Chettan', cursive;
+  font-family: 'Pacifico', cursive;
   color: #696969;
   font-style: normal;
   font-variant: normal;
@@ -117,7 +117,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #696969;
   font-style:normal;
   font-variant: normal;
@@ -128,7 +128,7 @@ h2 {
 
 h5 {
   font-size: 60px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #3D9990;
   font-style:normal;
   font-variant: normal;
@@ -143,7 +143,7 @@ h5 {
 
 h3 {
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #000000;
   font-style:normal;
   font-variant: normal;
@@ -157,7 +157,7 @@ h3 {
 
 h4 {
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #afafaf;
   font-style:normal;
   font-variant: normal;
@@ -167,7 +167,7 @@ h4 {
 
 p{
   font-size: 20px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: #3D9970;
   font-style:normal;
   font-variant: normal;
@@ -276,7 +276,7 @@ footer {
   padding: 14px 14px;
   float: left;
   color: white;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
   margin-right: 0px;
   font-size: 24px;
 }
@@ -288,7 +288,7 @@ footer {
 
 a {
   color: #ffffff;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 .body {
@@ -320,7 +320,7 @@ a {
   font-size: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family:'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 .form {
   text-align: center;
@@ -336,7 +336,7 @@ a {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 24px;
-  font-family:'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 .Newsletters {
@@ -358,58 +358,91 @@ max-height: 4000px;
 	font-style: italic;
 }
 
+
 #top1 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #top2 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #top3 {
 	visibility: hidden;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom1 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom2 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 #bottom3 {
 	visibility: hidden;
+	margin-top: 2px;
+	margin-left: 10px;
+	border-style: solid;
+	border-width: 2px;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes flash {
+	0% {border-color: blue;}
+	25% {border-color: purple;}
+	50% {border-color: green;}
+	75% {border-color: white;}
+	100% {border-color: blue}
 }
 .merge {
 	width: 285px;
-	height: 50px;
+	height: 44px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 .words {
   font-size: 24px;
   width: 480px;
   color: black;
-  font-family:'Oxygen', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 @keyframes marquee {
 	0% {left: 100%;}
 	100% {left: -100%;}
-
-
-.body-3{
-  background-color: #dddddd;
-  height: 2000px;
-  padding: 40px;
-  background-image: url(file:///C:/Users/jack1/Desktop/Project%20Folder/About%20Us%20Pictures/8.jpg);
-}
-
-.b31{
-
-}
-
-.b3l{
-
-}
-
-.b3r{
-
-}
