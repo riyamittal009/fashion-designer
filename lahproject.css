@@ -52,6 +52,7 @@ border-spacing: 0;
 		background: #fff7c0;
 		border-radius: 4px;
 		border-color: white;
+		font-family: 'Pacifico', cursive;
 	}
 	button {
 		border-style: none;
@@ -65,6 +66,7 @@ border-spacing: 0;
 		margin-top: 30px;
 		cursor: pointer;
 		outline: none;
+		font-family: 'Pacifico', cursive;
 	}
 	a {
 		text-decoration: none;
