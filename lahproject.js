@@ -213,7 +213,6 @@ function picture()
   if (waw==4 && three == "top")
   {
     options.style.visibility = "visible"
-    x = Math.floor(Math.random()*3)+1;
       for (var i=1; i<=3; i++)
       {
           document.getElementById("top" + i).src=one+two+three+four+".webp";
@@ -222,14 +221,13 @@ function picture()
       for (var k=0; k<=2; k++)
       {
           var bottom = document.getElementById("bottom"+k)
-          next = k+x
-          bottom.src = two+"bottom"+next+".webp";
+          x = Math.floor(Math.random()*3)+1;
+          bottom.src = two+"bottom"+x+".webp";
       }
 
   }
     else if (waw==4 && three == "bottom")
     {
-        x = Math.floor(Math.random()*5)+1;
         for (var i=1; i<=3; i++)
         {
             document.getElementById("bottom" + i).src=one+two+three+four+".webp";
@@ -238,8 +236,8 @@ function picture()
         for (var k=0; k<=2; k++)
         {
             var top = document.getElementById("top"+k)
-            next = k+x
-            top.src = two+"top"+next+".webp";
+              x = Math.floor(Math.random()*5)+1;
+            top.src = two+"top"+x+".webp";
         }
     }
 
