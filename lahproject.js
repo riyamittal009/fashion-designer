@@ -1,5 +1,41 @@
-var color = document.getElementById("color");
+var waw=0;
 
+var divcolor = document.getElementById("divcolor");
+var divgender = document.getElementById("divgender");
+var divfemaletype = document.getElementById("divfemaletype");
+var divmaletype = document.getElementById("divmaletype");
+var divfemaletops = document.getElementById("divfemaletops");
+var divfemalebottoms = document.getElementById("divfemalebottoms");
+var divmaletops = document.getElementById("divmaletops");
+var divmalebottoms = document.getElementById("divmalebottoms");
+
+divcolor.style.display = "none";
+divgender.style.display = "none";
+divfemaletype.style.display = "none";
+divmaletype.style.display = "none";
+divfemaletops.style.display = "none";
+divfemalebottoms.style.display = "none";
+divmaletops.style.display = "none";
+divmalebottoms.style.display = "none";
+
+if (waw == 0)
+{
+  divcolor.style.display = "block";
+  waw++;
+}
+    else if (waw == 1)
+    {
+      divgender.style.display = "block";
+      divcolor.style.display = "none";
+      waw++;
+    }
+        else if (waw == 2 && (savedgender == "female" || savedgender == "unisex")
+        {
+          divfemaletype.style.display == "block";
+          divgender.style.display == "none";
+        }
+
+var color = document.getElementById("color");
 function savecolor()
 {
   var savedcolor = color.options[color.selectedIndex].value;
