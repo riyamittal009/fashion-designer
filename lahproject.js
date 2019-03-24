@@ -218,7 +218,7 @@ function picture()
           document.getElementById("top" + i).src=one+two+three+four+".webp";
       }
 
-      for (var k=0; k<=2; k++)
+      for (var k=1; k<=3; k++)
       {
           var bottom = document.getElementById("bottom"+k)
           x = Math.floor(Math.random()*5)+1;
@@ -233,7 +233,7 @@ function picture()
             document.getElementById("bottom" + i).src=one+two+three+four+".webp";
         }
 
-        for (var k=0; k<=2; k++)
+        for (var k=1; k<=3; k++)
         {
             var top = document.getElementById("top"+k)
               x = Math.floor(Math.random()*5)+1;
