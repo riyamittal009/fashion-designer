@@ -204,6 +204,8 @@ if (waw == 0)
                 {
                   four = "shorts";
                 }
+
+                if (waw==5){
                 picture();
 }
 
