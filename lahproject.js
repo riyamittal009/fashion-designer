@@ -205,6 +205,9 @@ if (waw == 0)
 
 function picture()
 {
-  document.getElementById("testrun").src=one+two+three+four+".jpg";
+  if (waw==4)
+  {  document.getElementById("testrun").src=one+two+three+four+".jpg";
+  }
+    else {}
 
 }
