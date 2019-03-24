@@ -7,9 +7,6 @@ var divfemaletype = document.getElementById("divfemaletype");
 var divmaletype = document.getElementById("divmaletype");
 var divfemaletops = document.getElementById("divfemaletops");
 var divfemalebottoms = document.getElementById("divfemalebottoms");
-var divunisextype = document.getElementById("divunisextype");
-var divunisextops = document.getElementById("divunisextops");
-var divunisexbottoms = document.getElementById("divunisexbottoms");
 var divmaletops = document.getElementById("divmaletops");
 var divmalebottoms = document.getElementById("divmalebottoms");
 
@@ -21,9 +18,6 @@ var savedfemaletops;
 var savedfemalebottoms;
 var savedmaletops;
 var savedmalebottoms;
-var savedunisextops;
-var savedunisextype;
-var saveunisexbottoms;
 
 divcolor.style.display = "block";
 divgender.style.display = "none";
@@ -33,9 +27,6 @@ divfemaletops.style.display = "none";
 divfemalebottoms.style.display = "none";
 divmaletops.style.display = "none";
 divmalebottoms.style.display = "none";
-divunisextops.style.display = "none";
-divunisexbottoms.style.display = "none";
-divunisextype.style.display="none";
 
 var color = document.getElementById("color");
 function savecolor()
@@ -78,28 +69,6 @@ function savefemalebottoms()
   savedfemalebottoms = femalebottoms.options[femalebottoms.selectedIndex].value;
   console.log(savedfemalebottoms);
 }
-
-var unisextops = document.getElementById("unisextops");
-function saveunisextops()
-{
-  savedunisextops = femaletops.options[unisextops.selectedIndex].value;
-  console.log(savedunisextops);
-}
-
-var unisexbottoms = document.getElementById("funisexbottoms");
-function saveunisexbottoms()
-{
-  savedunisexbottoms = unisexbottoms.options[unisexbottoms.selectedIndex].value;
-  console.log(savedunisexbottoms);
-}
-
-var unisextype = document.getElementById("unisextype");
-function saveunisextype()
-{
-  savedunisextype = unisextype.options[unisextype.selectedIndex].value;
-  console.log(savedunisextype);
-}
-
 var maletops = document.getElementById("maletops");
 function savemaletops()
 {
@@ -155,23 +124,6 @@ if (waw == 0)
             {
             }*/
 
-        else if (waw == 2 && savedgender == "unisex")
-        {
-          divunisextype.style.display = "block";
-          divgender.style.display = "none";
-        }
-            else if (waw == 3 && savedunisextype == "top")
-            {
-              divunisextype.style.display = "none";
-              divunisextops.style.display="block";
-            }
-
-            else if (waw == 3 && savedunisextype == "bottom")
-            {
-              divunisextype.style.display = "none";
-              divunisexebottoms.style.display="block"
-            }
-
         else if (waw == 2 && savedgender == "male")
         {
           divmaletype.style.display = "block";
@@ -188,4 +140,19 @@ if (waw == 0)
               divmaletype.style.display = "none";
               divmalebottoms.style.display = "block";
             }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
