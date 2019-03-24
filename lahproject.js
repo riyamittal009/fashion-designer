@@ -121,10 +121,13 @@ if (waw == 0)
               divfemaletype.style.display = "none";
               divfemaletops.style.display="block";
               three = "top";
+              console.log(three);
             }
                 else if (savedfemaletops == "t-shirt")
                 {
                   four = "tshirt";
+                  console.log(four);
+                  console.log(one+", "+ two+", "+  three+", "+  four);
                 }
                 else if (savedfemaletops == "fullsleeve")
                 {
