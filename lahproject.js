@@ -230,6 +230,13 @@ function picture()
         {
             document.getElementById("bottom" + i).src=one+two+three+four+".webp";
         }
+
+        for (var k=1; k<=3; k++)
+        {
+            var top = document.getElementById("top"+k)
+            x = Math.floor(Math.random()*5)+1;
+            top.src = two+"savedfemaletops"+x+".webp";
+        }
     }
 
 }
